@@ -6,180 +6,169 @@
 		<link rel="stylesheet" href="styles/style.css"/>
 	</head>
 	<body>
-		<header class="header">
-			<img class="header__logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
-			<nav class="header__navigation-menu">
-				<a class="header__navigation-menu__item header__navigation-menu__model-s" href="#">Model S</a>
-				<p class="header__navigation-menu__underline"></p>
-				<a class="header__navigation-menu__item header__navigation-menu__model-x" href="#">Model X</a>
-				<a class="header__navigation-menu__item header__navigation-menu__model-3" href="#">Model 3</a>
-				<a class="header__navigation-menu__item header__navigation-menu__roadster" href="#">Roadster</a>
-				<a class="header__navigation-menu__item header__navigation-menu__energy" href="#">Energy</a>
-				<a class="header__navigation-menu__item header__navigation-menu__shop" href="#">Магазин</a>
-				<a class="header__navigation-menu__item header__navigation-menu__loggin" href="#">Войти</a>
-				<a class="header__navigation-menu__item header__navigation-menu__side-menu" href="#"><img src="images/side_menu.png" alt="side menu"> </a>
+		<header>
+			<img class="header-logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
+			<nav class="models-nav">
+				<a class="nav-item models-nav__active" href="#">Model S</a>
+				<a class="nav-item models-nav__modelx" href="#">Model X</a>
+				<a class="nav-item models-nav__model3" href="#">Model 3</a>
+				<a class="nav-item models-nav__roadster" href="#">Roadster</a>
+				<a class="nav-item models-nav__energy" href="#">Energy</a>
+			</nav>
+			<nav class="site-nav">
+				<a class="nav-item site-nav__shop" href="#">Магазин</a>
+				<a class="nav-item site-nav__loggin" href="#">Войти</a>
+				<a class="nav-item site-nav__side-menu" href="#"><img src="images/side_menu.png" alt="side menu"> </a>
 			</nav>
 		</header>
-		<main class="main">
-			<section class="main__preview">
-				<h1 class="main__preview__model-name">Model S</h1>
-				<p class="main__preview__introduce-text">Добро пожаловать в будущее!</p>
-				<img class="main__preview__logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
-				<img class="main__preview__car" src="tesla-car.png" alt="car appearance">
-				<p class="main__preview__about-car">
-					<p class="main__preview__about-car__speed">
-						<img class="main__preview__about-car__speed__speepometer-board" src="speedometer-board.png" alt="car sdepometr">
-						<img class="main__preview__about-car__speed__speepometer-arrow" src="speedometer-arrow.png" alt="car speedometr_arrow">
-						<p class="main__preview__about-car__speed__value">2,7</p>
-						<p class="main__preview__about-car__speed__units">сек</p>
-						<p class="main__preview__about-car__speed__range">0-100 км/час</p>
+		<main>
+			<section class="preview">
+				<h1 class="preview__title">Model S</h1>
+				<h2 class="preview__subtitle">Добро пожаловать в будущее!</h2>
+				<img class="preview__logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
+				<img class="preview__car-view" src="tesla-car.png" alt="car appearance">
+				<p class="preview__about-car">
+					<p class="car-speed">
+						<img class="car-speed__speepometer-board" src="speedometer-board.png" alt="car sdepometr">
+						<img class="car-speed__speepometer-arrow" src="speedometer-arrow.png" alt="car speedometr_arrow">
+						<p class="car-speed__value">2,7</p>
+						<p class="car-speed__units">сек</p>
+						<p class="car-speed__range">0-100 км/час</p>
 					</p>
-					<p class="main__preview__about-car__road">
-						<img class="main__preview__about-car__road__track" src="track.png" alt="road">
-						<img class="main__preview__about-car__road__marking" src="road_marking.png" alt="road marking">
-						<p class="main__preview__about-car__road__value">632</p>
-						<p class="main__preview__about-car__road__units">км</p>
-						<p class="main__preview__about-car__road__range">запас хода</p>
+					<p class="car-road">
+						<img class="car-road__track" src="track.png" alt="road">
+						<img class="car-road__marking" src="road_marking.png" alt="road marking">
+						<p class="car-road__value">632</p>
+						<p class="car-road__units">км</p>
+						<p class="car-road__range">запас хода</p>
 					</p>
-					<p class="main__preview__about-car__test-drive">
-						<img class="main__preview__about-car__test-drive__wheel" src="wheel.png" alt="part 1 from wheel">
-						<p class="main__preview__about-car__test-drive__text">ТЕСТ ДРАЙВ</p>
-						<p class="main__preview__about-car__test-drive__order">ЗАКАЗАТЬ</p>
-						<p class="main__preview__about-car__test-drive__border"></p>
+					<p class="car-testdrive">
+						<img class="car-testdrive__wheel" src="wheel.png" alt="part 1 from wheel">
+						<p class="car-testdrive__name">ТЕСТ ДРАЙВ</p>
+						<p class="car-testdrive__order">ЗАКАЗАТЬ</p>
+						<p class="car-testdrive__border"></p>
 					</p>
 				</p>
-				<img class="main__preview__arrow" src="arrow.png" alt="arrow down">
+				<img class="preview__arrow" src="arrow.png" alt="arrow down">
 			</section>
-			<section class="main__info">
-				<h2 class="main__info__model-name">Model S</h2>
-				<img class="main__info__cockpit" src="2013-tesla-model-s-cockpit.jpg" alt="cockpit in model s">
-				<aside class="main__info__advantages">
-					<h3 class="main__info__advantages__text-headline">Будущее вождения</h3>
-					<p class="main__info__advantages__topic-about-car">
+			<section class="info">
+				<h1 class="info__title">Model S</h1>
+				<img class="info__cockpit" src="2013-tesla-model-s-cockpit.jpg" alt="cockpit in model s">
+				<aside class="info__advantages">
+					<h1 class="advantages-title">Будущее вождения</h1>
+					<p class="topic-about-advantages">
 						Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
 					</p>
-					<p class="main__info__advantages__display">
-						<p class="main__info__advantages__display__screen"></p>
-						<p class="main__info__advantages__display__buttom"></p>
-						<p class="main__info__advantages__display__value">17</p>
-						<p class="main__info__advantages__display__units">дюймов</p>
-						<p class="main__info__advantages__display__explanation">Большой дисплей</p>
+					<p class="display">
+						<p class="display__screen"></p>
+						<p class="display__buttom"></p>
+						<p class="display__value">17</p>
+						<p class="display__units">дюймов</p>
+						<p class="display__explanation">Большой дисплей</p>
 					</p>
-					<p class="main__info__advantages__update">
-						<img class="main__info__advantages__update__wi-fi" src="wifi.png" alt="wi-fi label">
-						<p class="main__info__advantages__update__wireless-update">Беспроводное обновление ПО</p>
-						<p class="main__info__advantages__update__many-functions">Повышенная функциональность</p>
+					<p class="update">
+						<img class="update__wi-fi" src="wifi.png" alt="wi-fi label">
+						<p class="update__wireless-update">Беспроводное обновление ПО</p>
+						<p class="update__many-functions">Повышенная функциональность</p>
 					</p>
-					<p class="main__info__advantages__capacity">
-						<p class="main__info__advantages__capacity__bag"></p>
-						<p class="main__info__advantages__capacity__handle"></p>
-						<p class="main__info__advantages__capacity__value">894</p>
-						<p class="main__info__advantages__capacity__units">литра</p>
-						<p class="main__info__advantages__capacity__explanation">Объем грузового пространства</p>
+					<p class="capacity">
+						<p class="capacity__bag"></p>
+						<p class="capacity__handle"></p>
+						<p class="capacity__value">894</p>
+						<p class="capacity__units">литра</p>
+						<p class="capacity__explanation">Объем грузового пространства</p>
 					</p>
-					<p class="main__info__advantages__nav">
-						<p class="main__info__advantages__nav__round"></p>
-						<p class="main__info__advantages__nav__i">i</p>
-						<p class="main__info__advantages__nav__car-info">УЗНАТЬ БОЛЬШЕ</p>
-						<p class="main__info__advantages__nav__order">ЗАКАЗАТЬ</p>
-				    <p class="main__info__advantages__nav__border"></p>
+					<p class="links">
+						<p class="links__round"></p>
+						<p class="links__i">i</p>
+						<p class="links__car-info">УЗНАТЬ БОЛЬШЕ</p>
+						<p class="links__order">ЗАКАЗАТЬ</p>
+				    <p class="links__border"></p>
 					</p>
 				</aside>
 			</section>
-			<section class="main__safe">
-				<aside class="main__safe__advantages">
-					<h3 class="main__safe__advantages__text-headline">Самый безопасный автомобиль в мире</h3>
-					<p class="main__safe__advantages__topic-about-safe">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
-					<h3 class="main__safe__advantages__rating">Оценка защиты</h3>
-					<p class="main__safe__advantages__front">
-						<p class="main__safe__advantages__front__side">Спереди</p>
-						<img class="main__safe__advantages__front__star" src="star.png" alt="star 1">
-						<img class="main__safe__advantages__front__star" src="star.png" alt="star 2">
-						<img class="main__safe__advantages__front__star" src="star.png" alt="star 3">
-						<img class="main__safe__advantages__front__star" src="star.png" alt="star 4">
-						<img class="main__safe__advantages__front__star" src="star.png" alt="star 5">
+			<section class="safe">
+				<aside class="safe__scoring">
+					<h1 class="scoring-title">Самый безопасный автомобиль в мире</h1>
+					<p class="topic-about-safe">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+					<h1 class="rating-title">Оценка защиты</h1>
+					<p class="front-safe">
+						<p class="parameter-name">Спереди</p>
+						<img class="scoring-star" src="star.png" alt="star 1">
+						<img class="scoring-star" src="star.png" alt="star 2">
+						<img class="scoring-star" src="star.png" alt="star 3">
+						<img class="scoring-star" src="star.png" alt="star 4">
+						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="main__safe__advantages__aside">
-						<p class="main__safe__advantages__aside__side">Сбоку</p>
-						<img class="main__safe__advantages__aside__star" src="star.png" alt="star 1">
-						<img class="main__safe__advantages__aside__star" src="star.png" alt="star 2">
-						<img class="main__safe__advantages__aside__star" src="star.png" alt="star 3">
-						<img class="main__safe__advantages__aside__star" src="star.png" alt="star 4">
-						<img class="main__safe__advantages__aside__star" src="star.png" alt="star 5">
+					<p class="aside-safe">
+						<p class="parameter-name">Сбоку</p>
+						<img class="scoring-star" src="star.png" alt="star 1">
+						<img class="scoring-star" src="star.png" alt="star 2">
+						<img class="scoring-star" src="star.png" alt="star 3">
+						<img class="scoring-star" src="star.png" alt="star 4">
+						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="main__safe__advantages__aside-rack">
-						<p class="main__safe__advantages__aside-rack__side">Сбоку</p>
-						<p class="main__safe__advantages__aside-rack__exact">(стойка)</p>
-						<img class="main__safe__advantages__aside-rack__star" src="star.png" alt="star 1">
-						<img class="main__safe__advantages__aside-rack__star" src="star.png" alt="star 2">
-						<img class="main__safe__advantages__aside-rack__star" src="star.png" alt="star 3">
-						<img class="main__safe__advantages__aside-rack__star" src="star.png" alt="star 4">
-						<img class="main__safe__advantages__aside-rack__star" src="star.png" alt="star 5">
+					<p class="aside-rack-safe">
+						<p class="parameter-name">Сбоку</p>
+						<p class="subparameter-name">(стойка)</p>
+						<img class="scoring-star" src="star.png" alt="star 1">
+						<img class="scoring-star" src="star.png" alt="star 2">
+						<img class="scoring-star" src="star.png" alt="star 3">
+						<img class="scoring-star" src="star.png" alt="star 4">
+						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="main__safe__advantages__driver">
-						<p class="main__safe__advantages__driver__side">Водитель</p>
-						<img class="main__safe__advantages__driver__star" src="star.png" alt="star 1">
-						<img class="main__safe__advantages__driver__star" src="star.png" alt="star 2">
-						<img class="main__safe__advantages__driver__star" src="star.png" alt="star 3">
-						<img class="main__safe__advantages__driver__star" src="star.png" alt="star 4">
-						<img class="main__safe__advantages__driver__star" src="star.png" alt="star 5">
+					<p class="driver-safe">
+						<p class="parameter-name">Водитель</p>
+						<img class="scoring-star" src="star.png" alt="star 1">
+						<img class="scoring-star" src="star.png" alt="star 2">
+						<img class="scoring-star" src="star.png" alt="star 3">
+						<img class="scoring-star" src="star.png" alt="star 4">
+						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="main__safe__advantages__passanger">
-						<p class="main__safe__advantages__passanger__side">Пассажир</p>
-						<img class="main__safe__advantages__passanger__star" src="star.png" alt="star 1">
-						<img class="main__safe__advantages__passanger__star" src="star.png" alt="star 2">
-						<img class="main__safe__advantages__passanger__star" src="star.png" alt="star 3">
-						<img class="main__safe__advantages__passanger__star" src="star.png" alt="star 4">
-						<img class="main__safe__advantages__passanger__star" src="star.png" alt="star 5">
+					<p class="passanger-safe">
+						<p class="parameter-name">Пассажир</p>
+						<img class="scoring-star" src="star.png" alt="star 1">
+						<img class="scoring-star" src="star.png" alt="star 2">
+						<img class="scoring-star" src="star.png" alt="star 3">
+						<img class="scoring-star" src="star.png" alt="star 4">
+						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="main__safe__advantages__general-rating">
-						<img class="main__safe__advantages__general-rating__shield" src="shield.png" alt="shield">
-						<img class="main__safe__advantages__general-rating__ok" src="ok.png" alt="okey">
-						<p class="main__safe__advantages__general-rating__value">5 звезд</p>
-						<p class="main__safe__advantages__general-rating__safety">безопасности</p>
+					<p class="general-rating-safe">
+						<img class="general-rating-safe__shield" src="shield.png" alt="shield">
+						<img class="general-rating-safe__ok" src="ok.png" alt="okey">
+						<p class="general-rating-safe__value">5 звезд</p>
+						<p class="general-rating-safe__safety">безопасности</p>
 					</p>
-					<p class="main__safe__advantages__nav">
-						<p class="main__safe__advantages__nav__round"></p>
-						<p class="main__safe__advantages__nav__i">i</p>
-						<p class="main__safe__advantages__nav__car-info">УЗНАТЬ БОЛЬШЕ</p>
-						<p class="main__safe__advantages__nav__order">ЗАКАЗАТЬ</p>
-			    	<p class="main__safe__advantages__nav__border">rectangle</p>
+					<p class="links">
+						<p class="links__round"></p>
+						<p class="links__i">i</p>
+						<p class="links__car-info">УЗНАТЬ БОЛЬШЕ</p>
+						<p class="links__order">ЗАКАЗАТЬ</p>
+				    <p class="links__border"></p>
 					</p>
 				</aside>
-				<p class="main__safe__model-name">Model S</p>
-				<p class="main__safe__front-safe">
-					<p class="main__safe__front-safe__line">rectangle</p>
-					<p class="main__safe__front-safe__round">elipse</p>
-					<p class="main__safe__front-safe__explanation">Защита от удара спереди</p>
+				<p class="safe__model-name">Model S</p>
+				<p class="safe__front-damage-safe">
+					<p class="front-damage-safe__line">rectangle</p>
+					<p class="front-damage-safe__round">elipse</p>
+					<p class="front-damage-safe__explanation">Защита от удара спереди</p>
 				</p>
-				<p class="main__safe__aside-safe">
-					<p class="main__safe__aside-safe__line">rectangle</p>
-					<p class="main__safe__aside-safe__round">elipse</p>
-					<p class="main__safe__aside-safe__explanation">Защита от удара сбоку</p>
+				<p class="safe__aside-damage-safe">
+					<p class="aside-damage-safe__line">rectangle</p>
+					<p class="aside-damage-safe__round">elipse</p>
+					<p class="aside-damage-safe__explanation">Защита от удара сбоку</p>
 				</p>
-				<img class="main__safe__car" src="car-sectional.png" alt="sectional machine">
-				<p class="main__safe__rotate-safe">
-					<p class="main__safe__rotate-safe__round">elipse</p>
-					<p class="main__safe__rotate-safe__rectangle">rectangle</p>
-					<p class="main__safe__rotate-safe__explanation">Минимальный риск перевернуться в аварии</p>
+				<img class="safe__car-sectional" src="car-sectional.png" alt="sectional machine">
+				<p class="safe__rotate-damage-safe">
+					<p class="rotate-damage-safe__round">elipse</p>
+					<p class="rotate-damage-safe__rectangle">rectangle</p>
+					<p class="rotate-damage-safe__explanation">Минимальный риск перевернуться в аварии</p>
 				</p>
 			</section>
 		</main>
-		<footer class="footer">
-			<p class="footer__developed">Разработано в</p>
-			<img class="footer__word-w" src="word_w.png" alt="word w">
-			<img class="footer__word-e" src="word_e.png" alt="word e">
-			<img class="footer__word-b" src="word_b.png" alt="word b">
-			<img class="footer__word-h" src="word_h.png" alt="word h">
-			<img class="footer__word-e" src="word_e.png" alt="word e">
-			<img class="footer__word-r" src="word_r.png" alt="word r">
-			<img class="footer__word-o" src="word_o.png" alt="word o">
-			<img class="footer__word-s" src="word_s.png" alt="word s">
-			<img class="footer__word-c" src="word_c.png" alt="word c">
-			<img class="footer__word-h" src="word_h.png" alt="word h">
-			<img class="footer__word-o" src="word_o.png" alt="word o">
-			<img class="footer__word-o" src="word_o.png" alt="word o">
-			<img class="footer__word-l" src="word_l.png" alt="word l">
+		<footer>
+			<p class="developed">Разработано в</p>
+			<img class="Webhero-school-logo" src="Webhero-school.png" alt="webhero school logo">
 		</footer>
 	</body>
 </html>
