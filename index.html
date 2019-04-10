@@ -9,16 +9,16 @@
 		<header>
 			<img class="header-logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
 			<nav class="models-nav">
-				<a class="nav-item models-nav__active" href="#">Model S</a>
-				<a class="nav-item models-nav__modelx" href="#">Model X</a>
-				<a class="nav-item models-nav__model3" href="#">Model 3</a>
-				<a class="nav-item models-nav__roadster" href="#">Roadster</a>
-				<a class="nav-item models-nav__energy" href="#">Energy</a>
+				<a class="models-nav__item models-nav__active" href="#">Model S</a>
+				<a class="models-nav__item" href="#">Model X</a>
+				<a class="models-nav__item" href="#">Model 3</a>
+				<a class="models-nav__item" href="#">Roadster</a>
+				<a class="models-nav__item" href="#">Energy</a>
 			</nav>
 			<nav class="site-nav">
-				<a class="nav-item site-nav__shop" href="#">Магазин</a>
-				<a class="nav-item site-nav__loggin" href="#">Войти</a>
-				<a class="nav-item site-nav__side-menu" href="#"><img src="images/side_menu.png" alt="side menu"> </a>
+				<a class="site-nav__item" href="#">Магазин</a>
+				<a class="site-nav__item" href="#">Войти</a>
+				<a class="site-nav__item" href="#"><img src="images/side_menu.png" alt="side menu"> </a>
 			</nav>
 		</header>
 		<main>
@@ -26,28 +26,24 @@
 				<h1 class="preview__title">Model S</h1>
 				<h2 class="preview__subtitle">Добро пожаловать в будущее!</h2>
 				<img class="preview__logo" src="images/Tesla-Wordmark-Red.png" alt="Tesla logo">
-				<img class="preview__car-view" src="tesla-car.png" alt="car appearance">
-				<p class="preview__about-car">
-					<p class="car-speed">
-						<img class="car-speed__speepometer-board" src="speedometer-board.png" alt="car sdepometr">
-						<img class="car-speed__speepometer-arrow" src="speedometer-arrow.png" alt="car speedometr_arrow">
-						<p class="car-speed__value">2,7</p>
-						<p class="car-speed__units">сек</p>
-						<p class="car-speed__range">0-100 км/час</p>
-					</p>
-					<p class="car-road">
-						<img class="car-road__track" src="track.png" alt="road">
-						<img class="car-road__marking" src="road_marking.png" alt="road marking">
-						<p class="car-road__value">632</p>
-						<p class="car-road__units">км</p>
-						<p class="car-road__range">запас хода</p>
-					</p>
-					<p class="car-testdrive">
-						<img class="car-testdrive__wheel" src="wheel.png" alt="part 1 from wheel">
-						<p class="car-testdrive__name">ТЕСТ ДРАЙВ</p>
-						<p class="car-testdrive__order">ЗАКАЗАТЬ</p>
-						<p class="car-testdrive__border"></p>
-					</p>
+				<img class="preview__general-view" src="tesla-car.png" alt="car appearance">
+				<p class="preview__about">
+					<div class="feature">
+						<img class="feature__speepometer" src="speedometer.png" alt="car speedometer">
+						<div class="feature__speed-value">2,7</div>
+						<div class="feature__speed-units">сек</div>
+						<div class="feature__speed-range">0-100 км/час</div>
+						<img class="feature__road" src="road.png" alt="road">
+						<div class="feature__road-value">632</div>
+						<div class="feature__road-units">км</div>
+						<div class="feature__power-reserve">запас хода</div>
+					</div>
+					<div class="testdrive">
+						<img class="testdrive__wheel" src="wheel.png" alt="steering wheel">
+						<div class="testdrive__name">ТЕСТ ДРАЙВ</div>
+						<div class="testdrive__order">ЗАКАЗАТЬ</div>
+						<div class="testdrive__border"></div>
+					</div>
 				</p>
 				<img class="preview__arrow" src="arrow.png" alt="arrow down">
 			</section>
@@ -60,30 +56,30 @@
 						Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
 					</p>
 					<p class="display">
-						<p class="display__screen"></p>
-						<p class="display__buttom"></p>
-						<p class="display__value">17</p>
-						<p class="display__units">дюймов</p>
-						<p class="display__explanation">Большой дисплей</p>
+						<div class="display__screen"></div>
+						<div class="display__buttom"></div>
+						<div class="display__value">17</div>
+						<div class="display__units">дюймов</div>
+						<div class="display__explanation">Большой дисплей</div>
 					</p>
 					<p class="update">
 						<img class="update__wi-fi" src="wifi.png" alt="wi-fi label">
-						<p class="update__wireless-update">Беспроводное обновление ПО</p>
-						<p class="update__many-functions">Повышенная функциональность</p>
+						<div class="update__wireless-update">Беспроводное обновление ПО</div>
+						<div class="update__many-functions">Повышенная функциональность</div>
 					</p>
 					<p class="capacity">
-						<p class="capacity__bag"></p>
-						<p class="capacity__handle"></p>
-						<p class="capacity__value">894</p>
-						<p class="capacity__units">литра</p>
-						<p class="capacity__explanation">Объем грузового пространства</p>
+						<div class="capacity__bag"></div>
+						<div class="capacity__handle"></div>
+						<div class="capacity__value">894</div>
+						<div class="capacity__units">литра</div>
+						<div class="capacity__explanation">Объем грузового пространства</div>
 					</p>
 					<p class="links">
-						<p class="links__round"></p>
-						<p class="links__i">i</p>
-						<p class="links__car-info">УЗНАТЬ БОЛЬШЕ</p>
-						<p class="links__order">ЗАКАЗАТЬ</p>
-				    <p class="links__border"></p>
+						<div class="links__round"></div>
+						<div class="links__i">i</div>
+						<div class="links__info">УЗНАТЬ БОЛЬШЕ</div>
+						<div class="links__order">ЗАКАЗАТЬ</div>
+				    <div class="links__border"></div>
 					</p>
 				</aside>
 			</section>
@@ -93,7 +89,7 @@
 					<p class="topic-about-safe">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
 					<h1 class="rating-title">Оценка защиты</h1>
 					<p class="front-safe">
-						<p class="parameter-name">Спереди</p>
+						<div class="front-safe__side">Спереди</div>
 						<img class="scoring-star" src="star.png" alt="star 1">
 						<img class="scoring-star" src="star.png" alt="star 2">
 						<img class="scoring-star" src="star.png" alt="star 3">
@@ -101,7 +97,7 @@
 						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
 					<p class="aside-safe">
-						<p class="parameter-name">Сбоку</p>
+						<div class="side">Сбоку</div>
 						<img class="scoring-star" src="star.png" alt="star 1">
 						<img class="scoring-star" src="star.png" alt="star 2">
 						<img class="scoring-star" src="star.png" alt="star 3">
@@ -109,8 +105,8 @@
 						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
 					<p class="aside-rack-safe">
-						<p class="parameter-name">Сбоку</p>
-						<p class="subparameter-name">(стойка)</p>
+						<div class="side">Сбоку</div>
+						<div class="specified">(стойка)</div>
 						<img class="scoring-star" src="star.png" alt="star 1">
 						<img class="scoring-star" src="star.png" alt="star 2">
 						<img class="scoring-star" src="star.png" alt="star 3">
@@ -118,15 +114,15 @@
 						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
 					<p class="driver-safe">
-						<p class="parameter-name">Водитель</p>
+						<div class="side">Водитель</div>
 						<img class="scoring-star" src="star.png" alt="star 1">
 						<img class="scoring-star" src="star.png" alt="star 2">
 						<img class="scoring-star" src="star.png" alt="star 3">
 						<img class="scoring-star" src="star.png" alt="star 4">
 						<img class="scoring-star" src="star.png" alt="star 5">
 					</p>
-					<p class="passanger-safe">
-						<p class="parameter-name">Пассажир</p>
+					<p class="passenger-safe">
+						<div class="side">Пассажир</div>
 						<img class="scoring-star" src="star.png" alt="star 1">
 						<img class="scoring-star" src="star.png" alt="star 2">
 						<img class="scoring-star" src="star.png" alt="star 3">
@@ -135,39 +131,38 @@
 					</p>
 					<p class="general-rating-safe">
 						<img class="general-rating-safe__shield" src="shield.png" alt="shield">
-						<img class="general-rating-safe__ok" src="ok.png" alt="okey">
-						<p class="general-rating-safe__value">5 звезд</p>
-						<p class="general-rating-safe__safety">безопасности</p>
+						<div class="general-rating-safe__value">5 звезд</div>
+						<div class="general-rating-safe__safety">безопасности</div>
 					</p>
 					<p class="links">
-						<p class="links__round"></p>
-						<p class="links__i">i</p>
-						<p class="links__car-info">УЗНАТЬ БОЛЬШЕ</p>
-						<p class="links__order">ЗАКАЗАТЬ</p>
-				    <p class="links__border"></p>
+						<div class="links__round"></div>
+						<div class="links__i">i</div>
+						<div class="links__info">УЗНАТЬ БОЛЬШЕ</div>
+						<div class="links__order">ЗАКАЗАТЬ</div>
+				    <div class="links__border"></div>
 					</p>
 				</aside>
-				<p class="safe__model-name">Model S</p>
+				<h1 class="safe__model-name">Model S</h1>
 				<p class="safe__front-damage-safe">
-					<p class="front-damage-safe__line">rectangle</p>
-					<p class="front-damage-safe__round">elipse</p>
-					<p class="front-damage-safe__explanation">Защита от удара спереди</p>
+					<div class="front-damage-safe__line">rectangle</div>
+					<div class="front-damage-safe__round">elipse</div>
+					<div class="front-damage-safe__explanation">Защита от удара спереди</div>
 				</p>
 				<p class="safe__aside-damage-safe">
-					<p class="aside-damage-safe__line">rectangle</p>
-					<p class="aside-damage-safe__round">elipse</p>
-					<p class="aside-damage-safe__explanation">Защита от удара сбоку</p>
+					<div class="aside-damage-safe__line">rectangle</div>
+					<div class="aside-damage-safe__round">elipse</div>
+					<div class="aside-damage-safe__explanation">Защита от удара сбоку</div>
 				</p>
-				<img class="safe__car-sectional" src="car-sectional.png" alt="sectional machine">
+				<img class="safe__sectional" src="car-sectional.png" alt="sectional machine">
 				<p class="safe__rotate-damage-safe">
-					<p class="rotate-damage-safe__round">elipse</p>
-					<p class="rotate-damage-safe__rectangle">rectangle</p>
-					<p class="rotate-damage-safe__explanation">Минимальный риск перевернуться в аварии</p>
+					<div class="rotate-damage-safe__round">elipse</div>
+					<div class="rotate-damage-safe__rectangle">rectangle</div>
+					<div class="rotate-damage-safe__explanation">Минимальный риск перевернуться в аварии</div>
 				</p>
 			</section>
 		</main>
 		<footer>
-			<p class="developed">Разработано в</p>
+			<div class="developed">Разработано в</div>
 			<img class="Webhero-school-logo" src="Webhero-school.png" alt="webhero school logo">
 		</footer>
 	</body>
