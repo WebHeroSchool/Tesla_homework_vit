@@ -6,20 +6,18 @@
   max-width: 1440px;
 }
 
+/* site header */
+
 header {
   display: flex;
   align-items: center;
-  margin: 24px 60px 58px 43px;;
-}
-
-.header-logo{
-  margin-right: 258px;
+  justify-content: space-between;
+  margin: 24px 60px 58px 42px;;
 }
 
 .models-nav {
 	display: flex;
-	justify-content: space-between;
-  font-family: Montserrat;
+	justify-content: space-around;
 }
 
 .models-nav__item {
@@ -27,23 +25,11 @@ header {
   font-size: 15px;
   color: #000000	;
   text-decoration: none; 
-  margin-right: 25px;
+  margin-right: 45px;
 }
 
 .models-nav__item_active {
 	color: #E51937;
-}
-
-.models-nav__item:nth-child(1){
-  margin-right: 63px;
-}
-
-.models-nav__item:nth-child(3){
-  margin-right: 44px;
-}
-
-.models-nav__item:nth-child(4){
-  margin-right: 46px;
 }
 
 .models-nav__item_active::after {
@@ -60,7 +46,7 @@ header {
 	display: flex;
 	justify-content: space-between;
   font-family: Montserrat;
-  margin-left:165px;
+  align-items: center;
 }
 
 .site-nav__item {
@@ -71,11 +57,16 @@ header {
   margin-left: 30px;
 }
 
+.site-nav__item:nth-child(3) {
+	margin-top: 3px;
+}
+
+/* site section 1 */
+
 .preview {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0;
 	background-image: url("../images/tesla-big-logo.png");
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -98,33 +89,37 @@ header {
 
 .preview__about {
   display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	flex-wrap: wrap;
-	margin-top: 30px;
-	margin-bottom: 34px;
+	margin:25px 321px 34px 321px;
 }
 
 .feature {
   display: flex;
-	justify-content: center;
 	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-right: 81px;
 }
 
-.feature__parameters {
+.feature__parameters-sd {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	margin-left: 14px;
 }
 
-.speed,
+.feature__parameters-rd {
+	display: flex;
+	flex-direction: column;
+	margin-left: 11px;
+}
+
+.speed {
+	display: flex;
+	flex-direction: row;
+}
+
 .road {
 	display: flex;
 	flex-direction: row;
+	margin-top: -3px;
 }
 
 .speed__value, 
@@ -142,28 +137,23 @@ header {
 	padding-bottom: 5px;
 }
 
-.explanation_speed {
+.explanation_speed,
+.explanation_road {
 	font-weight: normal;
 	font-size: 12px;
-}
-
-.explanation_road  {
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.feature__image_speepometer {
-	margin-right: 14px;
+	margin-top: -2px;
 }
 
 .feature__image_road {
-	margin-right: 14px;
+	margin-top: 8px;
+	margin-left: 81px;
 }
 
 .testdrive {
 	display: flex;
 	align-items: center;
-	margin-left: 25px;
+	margin-left: 105px;
+	margin-top: 3px;
 }
 
 .testdrive__wheel {
@@ -193,4 +183,36 @@ header {
 .testdrive__order-text {
 	font-weight: bold;
 	font-size: 13px;
+	margin-left: 2px;
+}
+
+/* site section 2 */
+
+/* Медиазапросы */
+
+@media (max-width: 480px) {
+	header {
+		margin: 5px 21px 30px 2px;
+	}
+
+	.models-nav {
+		display: none;
+	}
+
+	.site-nav {
+		display: none;
+	}
+
+	.header-logo {
+		width: 138px;
+		height: 42px;
+	}
+
+	.preview{
+		background-position: center 25%;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+
 }
