@@ -73,6 +73,11 @@ header {
 	background-size: 100% auto;
 }
 
+.preview__general-view {
+  width: 100%;
+  max-width: 968px;
+}
+
 .preview__title {
 	font-weight: 600;
   font-size: 90px;
@@ -91,7 +96,13 @@ header {
   display: flex;
 	align-items: center;
 	flex-direction: row;
-	margin:25px 321px 34px 321px;
+	margin:24px 321px 34px 321px;
+}
+
+.feature-wraper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .feature {
@@ -176,6 +187,7 @@ header {
 	text-transform: uppercase;
 	box-sizing: border-box;
 	text-align: center;
+  padding: 0;
 	border: 2px solid;
 	background: #FFFFFF;
 }
@@ -199,9 +211,13 @@ header {
 		display: none;
 	}
 
-	.site-nav {
+	.site-nav__item:nth-child(1) {
 		display: none;
 	}
+
+  .site-nav__item:nth-child(2) {
+    display: none;
+  }
 
 	.header-logo {
 		width: 138px;
@@ -211,6 +227,64 @@ header {
 	.preview{
 		background-position: center 25%;
 	}
+
+  .preview__title {
+    font-size: 50px;
+  }
+
+  .preview__subtitle {
+    font-size: 10px;
+    margin-bottom: 49px;
+  }
+
+  .preview__about {
+    flex-direction: column;
+    margin-top: 18px;
+  }
+
+  .feature__image_speepometer {
+    width: 38px;
+    height: 28px;
+  }
+
+  .speed__value, 
+  .road__value {
+    font-size: 27px;
+  }
+
+  .speed__unit,
+  .road__unit {
+    font-size: 15px;
+  }
+
+  .explanation_speed,
+  .explanation_road {
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: -2px;
+  }
+
+  .feature__image_road {
+    margin-top: 8px;
+    margin-left: 42px;
+    width: 22px;
+    height: 35px;
+  }
+
+  .testdrive {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .testdrive__name {
+    margin-right: 0px;
+  }
+
+  .testdrive__whee {
+    background:#E51937;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
