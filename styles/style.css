@@ -2,6 +2,7 @@
 
 * {
 	font-family: Montserrat;
+	font-weight: normal;
 	margin: 0;
   max-width: 1440px;
 }
@@ -96,7 +97,7 @@ header {
   display: flex;
 	align-items: center;
 	flex-direction: row;
-	margin:24px 321px 34px 321px;
+	margin:25px 321px 34px 321px;
 }
 
 .feature-wraper {
@@ -203,6 +204,7 @@ header {
 /* Медиазапросы */
 
 @media (max-width: 480px) {
+
 	header {
 		margin: 5px 21px 30px 2px;
 	}
@@ -225,7 +227,8 @@ header {
 	}
 
 	.preview{
-		background-position: center 25%;
+		background-position: 55% 23%;
+		background-size: 114% auto;
 	}
 
   .preview__title {
@@ -235,16 +238,42 @@ header {
   .preview__subtitle {
     font-size: 10px;
     margin-bottom: 49px;
+    margin-top: -4px;
   }
+
+	.preview__general-view {
+	  	width: 95%;
+	}
 
   .preview__about {
     flex-direction: column;
-    margin-top: 18px;
+    margin: 25px 0 0 0;
+  }
+ 
+  .feature:nth-child(1) {
+  	margin-left: 10px;
+  	margin-right: 43px;
+  }
+
+  .feature:nth-child(2) {
+  	margin-right: 20px;
   }
 
   .feature__image_speepometer {
     width: 38px;
     height: 28px;
+  }
+
+  .feature__image_road {
+    margin-top: 1px	;
+    margin-right: 7px;
+    margin-left: 0;
+    width: 25px;
+    height: 41px;
+  }
+
+  .road {
+  	margin-top: 0;
   }
 
   .speed__value, 
@@ -255,38 +284,201 @@ header {
   .speed__unit,
   .road__unit {
     font-size: 15px;
+    margin-top: 11px;
   }
 
-  .explanation_speed,
-  .explanation_road {
-    font-weight: normal;
-    font-size: 10px;
-    margin-top: -2px;
-  }
+	.explanation_speed,
+	.explanation_road {
+	    font-weight: normal;
+	    font-size: 10px;
+	    margin-top: -2px;
+	}
 
-  .feature__image_road {
-    margin-top: 8px;
-    margin-left: 42px;
-    width: 22px;
-    height: 35px;
-  }
+	.feature__parameters-rd {
+		margin-left: 5px;
+	}
 
-  .testdrive {
+	.testdrive {
     display: flex;
     align-items: center;
     margin-left: 0;
-    margin-top: 0;
-  }
+    margin-top: 43px;
+    margin-bottom: 31px;
+	}
 
-  .testdrive__name {
-    margin-right: 0px;
-  }
+	.testdrive__name {
+    margin-right: 25px;
+    color: #E51937;
+	}
 
-  .testdrive__whee {
-    background:#E51937;
-  }
+	.testdrive__order {
+		color: #E51937;
+		background: #E51937;
+	}
+
+	.testdrive__order-text {
+		font-weight: bold;
+		font-size: 13px;
+		margin-left: 2px;
+		color: #FFFFFF;
+	}
+
+	.testdrive__wheel {
+		display: none;
+	}
+
+	.testdrive__order:before {
+		top: -5px;
+		width: 30px;
+		height: 30px;
+		background: url("../images/wheel-red.png");
+		background-size: 100% 100%;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
+	header {
+		margin: 24px 33px 80px 15px;
+	}
 
+	.models-nav {
+		display: none;
+	}
+
+	.site-nav__item:nth-child(1) {
+		display: none;
+	}
+
+  .site-nav__item:nth-child(2) {
+    display: none;
+  }
+
+  .site-nav__item:nth-child(3) {
+    width: 45px;
+    height: 32px;
+  }
+
+  .preview{
+		background-position: center 22%;
+		background-size: 108% auto;
+	}
+
+  .preview__subtitle {
+    margin-bottom: 87px;
+    margin-top: -10px;
+  }
+
+  .preview__about {
+		flex-direction: column;
+		margin: 42px 0 60px 0;
+	}
+
+	.feature:nth-child(1) {
+  	margin-left: 10px;
+  	margin-right: 82px;
+  }
+
+  .feature:nth-child(2) {
+  	margin-right: 25px;
+  }
+
+	.preview__general-view {
+	  	width: 91%;
+	}
+
+	.feature__image_speepometer {
+    width: 66px;
+    height: 49px;
+  }
+
+  .feature__parameters-sd {
+		margin-left: 16px;
+		margin-top: -6px;
+	}
+
+	.feature__parameters-rd {
+		margin-left: 5px;
+		margin-top: -4px;
+	}
+
+  .feature__image_road {
+    margin-top: 1px	;
+    margin-right: 7px;
+    margin-left: 0;
+    width: 44px;
+    height: 72px;
+  }
+
+  .feature__image_road {
+		margin-top: 8px;
+		margin-left: 0px;
+	}
+
+  .speed {
+  	margin-left: 4px;
+  }
+
+  .road {
+  	margin-top: -6px;
+  	margin-left: 5px;
+  }
+
+  .speed__value, 
+  .road__value {
+    font-size: 50px;
+    margin-right: 3px;
+  }
+
+  .speed__unit,
+  .road__unit {
+    font-size: 20px;
+    margin-bottom: 12px;
+    /*margin-left: 	3px;*/
+  }
+
+  .explanation_speed,
+	.explanation_road {
+		justify-content: flex-start;
+		margin-top: -4px;
+		margin-left: 5px;
+	}
+
+	.testdrive {
+		/*margin-left: 105px;*/
+		margin-top: 55px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.testdrive__wheel {
+		display: none;
+	}
+
+	.testdrive__name {
+    font-size: 16px;
+    color: #E51937;
+	}
+
+	.testdrive__order {
+		color: #E51937;
+		width: 221px;
+		height: 55px;
+		background: #E51937;
+		margin-right: 60px;
+	}
+
+	.testdrive__order-text {
+		font-weight: bold;
+		font-size: 16px;
+		margin-left: 2px;
+		color: #FFFFFF;
+	}
+
+	.testdrive__name:before {
+		top: -5px;
+		width: 30px;
+		height: 30px;
+		background: url("../images/wheel-red.png");
+		background-size: 100% 100%;
+	}
 }
