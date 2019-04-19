@@ -4,7 +4,6 @@
 	font-family: Montserrat;
 	font-weight: normal;
 	margin: 0;
-  max-width: 1440px;
 }
 
 /* site header */
@@ -492,7 +491,7 @@ header {
     height: 31px;
     left: -17px;
     top: -7px;
-		background: url("../images/wheel-red.png");
+		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
 	}
 }
