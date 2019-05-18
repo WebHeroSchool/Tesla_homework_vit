@@ -21,12 +21,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 60px 58px 42px;;
+  margin: 24px 60px 58px 42px;
 }
 
 .models-nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-left: 110px;
 }
 
 .models-nav__item {
@@ -53,6 +54,20 @@ header {
 
 .models-nav__item:hover:after {
 	width: 100%;
+}
+
+.models-nav__item-active {
+	color: #E51937;
+}
+
+.models-nav__item-active:after {
+  content: "";
+  background: url(../images/active-line.svg) bottom no-repeat;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  top: 6px;
 }
 
 .site-nav {
