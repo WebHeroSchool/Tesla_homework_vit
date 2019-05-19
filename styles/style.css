@@ -280,7 +280,7 @@ header {
 	.site-nav__item:nth-child(3) {
 		width: 24px;
 		height: 15px;
-		background: url("../images/side_menu.png");
+		background: url("../images/side_menu.svg");
 	}
 
 	.header-logo {
@@ -404,7 +404,7 @@ header {
 	}
 }
 
-@media (min-width: 481px) and (max-width: 960px) {
+@media (min-width: 481px) and (max-width: 1024px) {
 
 	header {
 		margin: 24px 33px 80px 15px;
@@ -554,5 +554,12 @@ header {
     	top: -7px;
 		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1161px) { 
+
+	.models-nav__item {
+	  margin-right: 10px;
 	}
 }
