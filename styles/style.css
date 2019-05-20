@@ -148,7 +148,7 @@ header {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	margin:28px 321px 34px 321px;
+	margin:26px 321px 34px 321px;
 }
 
 .feature-wraper {
@@ -255,7 +255,53 @@ header {
 	margin-left: 2px;
 }
 
+.preview__arrow {
+	margin-bottom: 34px;
+}
+
 /* site section 2 */
+.info{
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+
+.info__title {
+	width: 100%;
+	margin: 0;
+	padding-top: 63px;
+	padding-left: 80px;
+	background-image: url("../images/2013-tesla-model-s-cockpit.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-size: 70px;
+	font-weight: 600;
+	color: #E51937;
+}
+
+.info__advantages {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	width: 494px;
+	padding: 51px 72px 63px 52px;
+	color: #ffffff;
+	background-color: #E51937;
+}
+
+.advantages-title {
+	font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 11px;
+}
+
+.topic-about-advantages {
+	font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 54px;
+}
+
+/* site section 3 */
 
 /* Медиазапросы */
 
