@@ -733,6 +733,86 @@ header {
 		background: url("../images/wheel-red.png");
 		background-size: 100% 100%;
 	}
+
+	.preview__arrow {
+		margin-bottom: 0;
+	}
+
+	.info {
+		flex-direction: column;
+    min-height: auto;
+	}
+
+	.info__title{
+		margin: 0;
+    padding: 0;
+    color: transparent;
+    background-image: url(../images/2013-tesla-model-s-cockpit-mobile.png);
+    background-position: center top;
+    background-size: cover;
+    background-size: 100% auto;
+    min-height: 350px;
+	}
+
+	.info__advantages {
+		width: auto;
+    padding: 18px 25px 0px 25px;
+    margin-top: -27px;
+	}
+
+	.info__advantages-wrap {
+		display: none;
+	}
+
+	.topic-about-advantages {
+		margin-bottom: 30px;
+	}
+
+	.links{
+		display: none;
+	}
+
+	.safe {
+		flex-direction: column-reverse;
+    min-height: auto;
+	}
+
+	.safe__scoring {
+		width: auto;
+    padding: 18px 25px 0px 25px;
+	}
+
+	.safe__scoring-wrapper-stars {
+		display: none;
+	}
+
+	.safe__image-wrapper{
+		min-height: 300px;
+	}
+
+	.safe-image {
+		left: 49%;
+    top: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%
+	}
+
+	.safe__image-wrapper {
+		background-position: 100% 19%;
+		background-size: 99% auto;
+	}
+
+	.safe__scoring{
+		margin-top: -5px;
+	}
+
+	.safe__scoring-wrapper {
+		margin-left: 5px;
+	}
+
+	.footer-wrap {
+		display: none;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -885,11 +965,19 @@ header {
 		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
 	}
+
+	.footer-wrap {
+		display: none;
+	}
 }
 
 @media (min-width: 1025px) and (max-width: 1161px) { 
 
 	.models-nav__item {
 	  margin-right: 10px;
+	}
+
+	.footer-wrap {
+		display: none;
 	}
 }
