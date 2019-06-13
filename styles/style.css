@@ -766,6 +766,7 @@ header {
 
 	.topic-about-advantages {
 		margin-bottom: 30px;
+		width: auto;
 	}
 
 	.links{
@@ -780,6 +781,10 @@ header {
 	.safe__scoring {
 		width: auto;
     padding: 18px 25px 0px 25px;
+	}
+
+	.topic-about-safe {
+		width: auto;
 	}
 
 	.safe__scoring-wrapper-stars {
@@ -964,6 +969,152 @@ header {
     	top: -7px;
 		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
+	}
+
+	.preview__arrow {
+		margin-bottom: 70px;
+	}
+
+	.info {
+		flex-direction: column;
+    min-height: auto;
+	}
+
+	.info__title {
+		width: auto;
+    margin: 0;
+    padding: 0;
+    padding-right: 46px;
+    color: #E51937;
+    text-align: right;
+    background-image: url(../images/2013-tesla-model-s-cockpit-table.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 505px;
+	}
+
+	.info__advantages {
+		flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 56px 34px 68px 34px;
+    margin-top: -10px;
+	}
+
+	.advantages-title {
+		width: 316px;
+		margin-bottom: 20px;
+	}
+
+	.info__advantages-wrap-text {
+		width: 45%;
+    margin-right: 0;
+	}
+
+	.topic-about-advantages {
+		width: auto;
+	}
+
+	.info__advantages-wrap{
+		width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+	}
+
+	.car-odds {
+		width: auto;
+    max-width: 200px;
+    margin-right: 0;
+    margin-left: 70px;
+    margin-bottom: 0;
+	}
+
+	.display {
+		margin-bottom: 30px;
+	}
+
+	.update {
+		margin-bottom: 20px;
+	}
+
+	.capacity {
+		margin-bottom: 0;
+	}
+
+	.links {
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	.links__info:before {
+	  left: 0px;
+    top: -6px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/i-round-table.svg);
+    background-size: 100% 100%;
+	}
+
+	.links__info {
+		margin-right: 36px;
+    padding-left: 43px;
+    font-size: 16px;
+	}
+
+	.links__order {
+		padding: 15px 62px;
+    font-size: 16px;
+	}
+
+	.safe {
+		flex-direction: column-reverse;
+    min-height: auto;
+	}
+
+	.safe__scoring {
+		flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 58px 34px 52px 34px;
+	}
+
+	.topic-about-safe {
+		width: auto;
+	}
+
+	.safe__scoring-wrapper {
+		width: 46%;
+	}
+
+	.topic-about-safe {
+	  width: auto;
+	}
+
+	.safe__scoring-wrapper-stars {
+		width: auto;
+    max-width: 45%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 55px;
+	}
+
+	.general-rating-safe {
+		display: none;
+	}
+
+	.safe__image-wrapper {
+		min-height: 540px;
+		background-position: center 15%;
+		background-size: 75% auto;
+	}
+
+	.safe-image {
+		left: 47%;
+    top: 53%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 98%;
 	}
 
 	.footer-wrap {
