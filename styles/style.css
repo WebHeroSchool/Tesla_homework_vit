@@ -356,7 +356,7 @@ header {
 
 .update:before {
   position: absolute;
-  left: -3px;
+  left: 0;
   top: 16px;
   content: "";
   display: block;
@@ -508,7 +508,7 @@ header {
 
 .safe-rate__text {
 	display: inline-block;
-	font-weight: 500;
+	font-weight: bold;
   width: 120px;
   margin-right: 25px;
 }
@@ -1139,5 +1139,15 @@ header {
 
 	.footer-wrap {
 		display: none;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.testdrive {
+		width: 300px;
+	}
+
+	.testdrive__name {
+		width: 100px;
 	}
 }
