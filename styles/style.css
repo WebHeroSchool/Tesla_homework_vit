@@ -919,34 +919,35 @@ header {
 	}
 
 	.info__advantages__wrap-text {
-		width: 320px;
+		width: 45%;
 		margin-right: 100px;
 		padding-top: 4px;
 	}
 
 	.advantages-title {
 		margin-bottom: 20px;
+		width: auto;
 	}
 
 	.topic-about-advantages{
     margin-right: 0;
     margin-bottom: 0;
+    width: auto;
 	}
 
 	.info__advantages__wrap-odds {
 		padding-top: 0px;
 		margin-bottom: 72px;
-	}
-
-	.info__advantages-wrap{
-		width: 50%;
-    margin-right: 0;
-    margin-left: 0;
+		width: 30%;
 	}
 
 	.odds {
 		width: auto;
     max-width: 200px;
+	}
+
+	.odds__text-wrap {
+		width: auto;
 	}
 
 	.odds:nth-child(1) {
@@ -958,7 +959,7 @@ header {
 	}
 
 	.odds__text-wrap-measure{
-		width: 172px;
+		width: auto;
 	}
 
 	.wifi_image {
@@ -966,7 +967,7 @@ header {
 	}
 
 	.links {
-		width: 459px;
+		width: auto;
 		height: 55px;
 		padding-left: 160px;
 	}
@@ -1018,9 +1019,13 @@ header {
 	}
 
 	.safe__scoring__text-wrapper {
-		width: 320px;
+		width: 45%;
 		margin-bottom: 0;
 		margin-right: 66px;
+	}
+
+	.scoring-title {
+		width: auto;
 	}
 
 	.topic-about-safe {
@@ -1029,10 +1034,11 @@ header {
 
 	.safe__scoring__rate-wrapper {
 		margin-bottom: 66px;
+		width: 45%;
 	}
 
 	.rate-wrapper:nth-child(6) {
-     margin-bottom: 0; 
+    margin-bottom: 0; 
 	}
 
 	.general-rating-safe {
@@ -1056,11 +1062,27 @@ header {
 }
 
 @media (min-width: 481px) and (max-width: 600px) { 
-	.feature:nth-child(1) {
-	    margin-right: 50px;
+	.info__advantages__wrap-text {
+		margin-right: 20px;
 	}
 
-	.info__advantages-wrap-text {
-		margin-bottom: 100px;
+	.links-wrap {
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 650px) { 
+	.links {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 730px) { 
+	.safe__scoring__text-wrapper {
+		margin-right: 20px;
+	}
+
+	.safe-rate__text {
+		margin-right: 0;
 	}
 }
