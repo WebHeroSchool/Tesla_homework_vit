@@ -4,10 +4,6 @@
 	font-weight: normal;
 }
 
-body {
-	margin: 0;
-}
-
 .wrap {
   position: relative;
 	min-width: 320px;
@@ -27,7 +23,7 @@ header {
 .models-nav {
 	display: flex;
 	justify-content: space-between;
-	margin-left: 110px;
+	width: 489px;
 }
 
 .models-nav__item {
@@ -35,7 +31,6 @@ header {
   font-size: 15px;
   color: #000000	;
   text-decoration: none; 
-  margin-right: 45px;
 }
 
 .models-nav__item:after {
@@ -73,8 +68,7 @@ header {
 .site-nav {
 	display: flex;
 	justify-content: space-between;
-  font-family: Montserrat;
-  align-items: center;
+	width: 203px;
 }
 
 .site-nav__item {
@@ -82,7 +76,6 @@ header {
   font-size: 15px;
   color: #000000	;
   text-decoration: none; 
-  margin-left: 30px;
 }
 
 .site-nav__item:after {
@@ -113,7 +106,7 @@ header {
 	background-size: 100% 100%;
 }
 
-/* site section 1 */
+/* preview section */
 
 .preview {
 	display: flex;
@@ -123,37 +116,36 @@ header {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;
-}
-
-.preview__general-view {
-  max-width: 968px;
+	position: relative;
 }
 
 .preview__title {
 	font-weight: 600;
-  	font-size: 90px;
-  	align-items: center;
+  font-size: 90px;
+  margin-bottom: 35px;
 }
 
 .preview__subtitle {
   font-weight: 500;
   font-size: 15px;
-  align-items: center;
-  margin-top: -10px;
-  margin-bottom: 27px;
+  position: absolute;
+  top: 100px;
+}
+
+.preview__general-view {
+	margin-bottom: 26px;
 }
 
 .preview__about {
 	display: flex;
-	align-items: center;
 	flex-direction: row;
-	margin:26px 321px 34px 321px;
+	margin-bottom: 34px;
 }
 
 .feature-wraper {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  margin-right: 105px;
 }
 
 .feature {
@@ -161,16 +153,27 @@ header {
 	align-items: center;
 }
 
+.feature:nth-child(1){
+	margin-right: 81px;
+}
+
+.feature__image_speepometer {
+	margin-right: 14px;
+}
+
+.feature__image_road {
+	margin-right: 11px;
+	padding-top: 8px;
+}
+
 .feature__parameters-sd {
 	display: flex;
 	flex-direction: column;
-	margin-left: 14px;
 }
 
 .feature__parameters-rd {
 	display: flex;
 	flex-direction: column;
-	margin-left: 11px;
 }
 
 .speed {
@@ -181,41 +184,32 @@ header {
 .road {
 	display: flex;
 	flex-direction: row;
-	margin-top: -3px;
 }
 
 .speed__value, 
 .road__value {
 	font-weight: 600;
 	font-size: 35px;
+	margin-right: 7px;
 }
 
 .speed__unit,
 .road__unit {
 	font-weight: 600;
 	font-size: 20px;
-	padding-left: 7px;
 	align-self: flex-end;
-	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .explanation_speed,
 .explanation_road {
 	font-weight: normal;
 	font-size: 12px;
-	margin-top: -2px;
-}
-
-.feature__image_road {
-	margin-top: 8px;
-	margin-left: 81px;
 }
 
 .testdrive {
 	display: flex;
 	align-items: center;
-	margin-left: 105px;
-	margin-top: 3px;
 }
 
 .testdrive__wheel {
@@ -235,9 +229,6 @@ header {
 	color: #E51937;
 	width: 160px;
 	height: 40px;
-	text-transform: uppercase;
-	box-sizing: border-box;
-	text-align: center;
   padding: 0;
 	border: 2px solid;
 	background: #FFFFFF;
@@ -251,23 +242,19 @@ header {
 .testdrive__order-text {
 	font-weight: bold;
 	font-size: 13px;
-	margin-left: 2px;
 }
 
 .preview__arrow {
 	margin-bottom: 34px;
 }
 
-/* site section 2 */
+/* info section */
 .info{
 	display: flex;
-	justify-content: space-between;
-	min-height: 900px;
 }
 
 .info__title {
 	width: 100%;
-	margin: 0;
 	padding-top: 63px;
 	padding-left: 80px;
 	background-image: url("../images/2013-tesla-model-s-cockpit.png");
@@ -281,9 +268,7 @@ header {
 .info__advantages {
 	display: flex;
 	flex-direction: column;
-	justify-content:top;
-	width: 494px;
-	padding: 51px 72px 63px 52px;
+	padding: 51px 41px 63px 52px;
 	color: #ffffff;
 	background-color: #E51937;
 }
@@ -291,136 +276,104 @@ header {
 .advantages-title {
 	font-weight: 600;
   font-size: 30px;
-  margin: 0 0 11px 0;
+  margin-bottom: 11px;
 }
 
 .topic-about-advantages {
 	font-weight: 500;
   font-size: 15px;
-  margin: 0 0 54px 0;
+  margin-bottom: 56px;
   width: 316px;
-  height: 206px;
   line-height: 18px;
 }
 
-.car-odds {
-	position: relative;
-	width: 200px;
-	margin-bottom: 44px;
+.info__advantages__wrap-odds {
+	margin-bottom: 170px;
 }
 
-.display {
-  padding-left: 55px;
+.odds {
+	display: flex;
+	align-items: center;
 }
 
-.display:before {
-	position: absolute;
-	left: 0;
-	top: 12px;
-	content: "";
-	display: block;
-	width: 36px;
-	height: 53px;
-	background: url("../images/screen.svg");
-	background-size: 100% 100%;
+.odds:nth-child(1){
+	margin-bottom: 28px;
 }
 
-.car-odds__wrap-text {
-  margin: 0 0 0 0;
-  font-size: 20px;
+.odds:nth-child(2){
+	margin-bottom: 17px;
 }
 
-.wrap-text__value {
-	margin-right: 6px;
+.odds__image {
+	margin-right: 19px;
+	padding-top: 18px;
+}
+
+.wifi_image {
+	margin-right: 17px;
+	padding-top: 6px;
+}
+
+.cap_image {
+	margin-right: 25px;
+}
+
+.odds__text-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.odds__text-wrap-cap {
+	padding-top: 9px;
+}
+
+.odds__text-wrap-measure {
+	display: flex;
+	flex-direction: row;
+}
+
+.text-wrap__count {
+	margin-right: 10px;
   font-size: 35px;
   font-weight: 600;
 }
 
-.wrap-text__units {
-	font-weight: 600;
-	padding-right: 40px;
-}
-
-.car-odds__explanation {
-  width: 180px;
-  margin: 0;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-.update {
-  padding-left: 60px;
-  margin-bottom: 25px;
-}
-
-.update:before {
-  position: absolute;
-  left: 0;
-  top: 16px;
-  content: "";
-  display: block;
-  width: 44px;
-  height: 34px;
-  background: url(../images/wifi.svg);
-  background-size: 100% 100%;
-}
-
-.update__wireless-update {
-  margin: 0 0 1px 0;
-  font-weight: 600;
+.text-wrap__value {
   font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+  padding-top: 10px;
   line-height: 18px;
 }
 
-.update__many-functions {
-	width: 180px;
-  margin: 0;
+.text-wrap__explanation {
   font-weight: normal;
   font-size: 12px;
-}
-
-.capacity {
-	padding-left: 60px;
-	margin-bottom: 180px;
-}
-
-.capacity:before {
-  position: absolute;
-  left: 0px;
-  top: 14px;
-  content: "";
-  display: block;
-  width: 36px;
-  height: 52px;
-  background: url(../images/bag.svg);
-  background-size: 100% 100%;
 }
 
 .links {
 	width: 347px;
 	height: 40px;
+	display: flex;
+	flex-direction: row;
 }
 
-.links__info:before {
-  position: absolute;
-  left: 0px;
-  top: -4px;
-  content: "";
-  display: block;
-  width: 22px;
-  height: 22px;
-  background: url(../images/i-round.svg);
-  background-size: 100% 100%;
+.links-wrap {
+	display: flex;
+	flex-direction: row;
+	margin-right: 26px;
 }
 
-.links__info {
-	position: relative;
-  padding-left: 29px;
-  margin-right: 21px;
+.links-wrap__image {
+	margin-right: 6px;
+}
+
+.links-wrap__info {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
   font-size: 13px;
+  align-self: center;
 }
 
 .links__order {
@@ -432,46 +385,29 @@ header {
   color: #ffffff;
   background-color: #E51937;
   border-color: #ffffff;
-  margin-left: 7px;
 }
 
-/* site section 3 */
+/* safe section */
 
 .safe {
   display: flex;
-  justify-content: space-between;
-  min-height: 900px;
 }
 
 .safe__scoring {
   display: flex;
   flex-direction: column;
-  justify-content: top;
   width: 344px;
-  padding: 51px 72px 0 56px;
+  padding: 51px 40px 60px 56px;
   color: #ffffff;
   background-color: #E51937;
 }
 
-.safe__scoring-wrapper-stars {
-	margin-bottom: 70px;
-}
-
-.safe__image-wrapper {
-  width: 100%;
-  position: relative;
-}
-
-.safe-image {
-  width: 105%;
-  position: absolute;
-  top: 45%;
-  left: -98px;
-  transform: translateY(-40%);
+.safe__scoring__text-wrapper{
+	margin-bottom: 56px;
 }
 
 .scoring-title {
-	margin: 0 0 11px 0;
+	margin-bottom: 13px;
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
@@ -479,85 +415,76 @@ header {
 
 .topic-about-safe {
 	width: 316px;
-  margin: 0 0 58px 0;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
 }
 
-.safe__image-wrapper {
-	background-image: url("../images/model-s.png");
-	background-repeat: no-repeat;
-	background-position: 100% 19%;
-	background-size: 80% auto;
+.safe__scoring__rate-wrapper {
+	margin-bottom: 59px;
 }
 
+
 .rating-title {
-	margin: 0 0 23px 0;
+	margin-bottom: 23px;
   font-weight: 600;
   font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.rate-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.rate-wrapper:nth-child(6) {
+	margin-bottom: 98px;
 }
 
 .safe-rate {
-	font-weight: 500;
-  font-size: 17px;
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-bottom: 12px;
+	display: flex;
+  flex-direction: row;
 }
 
 .safe-rate__text {
-	display: inline-block;
 	font-weight: bold;
-  width: 120px;
-  margin-right: 25px;
+  width: 122px;
+  font-size: 17px;
+  margin-right: 31px;
+  padding-top: 4px;
 }
 
 .safe-rate__text-small{
 	font-weight: bold;
-    font-size: 10px;
-    opacity: 0.7;
+  font-size: 10px;
+  opacity: 0.7;
 }
 
-.star-wrapper {
+.safe-rate__wrapper {
 	display: inline-block;
   width: 160px;
 }
 
-.scoring-star {
-	display: inline-block;
+.star {
   width: 25px;
   height: 25px;
-  vertical-align: bottom;
-  background-image: url(../images/star.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .general-rating-safe {
-  position: relative;
-  margin-left: 20px;
-  padding-left: 75px;
-  margin-top: 103px;
-  font-weight: 600;
-  font-size: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
-.general-rating-safe:before {
-	position: absolute;
-  left: -10px;
-  top: 9px;
-  content: "";
-  display: block;
-  width: 62px;
-  height: 74px;
-  background: url(../images/shield.svg);
-  background-size: 100% 100%;
+
+.general-rating-safe__image{
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-right: 23px;
 }
 
-.general-rating-safe {
+.general-rating-safe__text{
 	position: relative;
-  width: 200px;
 }
 
 .general-rating-safe__value {
@@ -567,7 +494,28 @@ header {
 
 .general-rating-safe__safety {
 	font-weight: 600;
-	margin-top: -9px;
+	font-size: 25px;
+	position: absolute;
+	bottom: 3px;
+}
+
+.safe__image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.safe__image-wrapper {
+	background-image: url("../images/model-s.png");
+	background-repeat: no-repeat;
+	background-position: 100% 19%;
+	background-size: 80% auto;
+}
+
+.safe-image {
+  width: 105%;
+  position: absolute;
+  top: 170px;
+  right: 46px;
 }
 
 /* footer */
@@ -576,12 +524,10 @@ header {
   position: absolute;
   bottom: 10px;
   right: 18px;
-  width: 95px;
   font-family: 'Montserrat';
 }
 
 .developed {
-	margin: 0;
   margin-bottom: 3px;
   text-align: center;
   font-weight: bold;
@@ -598,6 +544,10 @@ header {
 
 	.models-nav {
 		display: none;
+	}
+
+	.site-nav {
+		width: 24px;
 	}
 
 	.site-nav__item:nth-child(1) {
@@ -619,6 +569,8 @@ header {
 		height: 42px;
 	}
 
+	/* preview section */
+
 	.preview{
 		background-position: 55% 23%;
 		background-size: 114% auto;
@@ -626,25 +578,30 @@ header {
 
 	.preview__title {
 		font-size: 50px;
+		margin-bottom: 56px;
 	}
 
 	.preview__subtitle {
 		font-size: 10px;
-		margin-bottom: 49px;
-		margin-top: -4px;
+		top: 58px;
 	}
 
 	.preview__general-view {
-	  	width: 95%;
+		width: 95%;
 	}
 
 	.preview__about {
 		flex-direction: column;
-		margin: 27px 0 0 0;
+		margin-bottom: 30px;
+	}
+
+	.feature-wraper {
+		margin-right: 0;
+		margin-bottom: 42px;
+		padding-left: 10px;
 	}
 
 	.feature:nth-child(1) {
-		margin-left: 10px;
 		margin-right: 43px;
 	}
 
@@ -658,15 +615,9 @@ header {
 	}
 
 	.feature__image_road {
-		margin-top: 1px	;
 		margin-right: 7px;
-		margin-left: 0;
 		width: 25px;
 		height: 41px;
-	}
-
-	.road {
-		margin-top: 0;
 	}
 
 	.speed__value, 
@@ -677,14 +628,12 @@ header {
 	.speed__unit,
 	.road__unit {
 		font-size: 15px;
-		margin-top: 11px;
 	}
 
 	.explanation_speed,
 	.explanation_road {
-	    font-weight: normal;
-	    font-size: 10px;
-	    margin-top: -2px;
+    font-weight: normal;
+    font-size: 10px;
 	}
 
 	.feature__parameters-rd {
@@ -694,9 +643,7 @@ header {
 	.testdrive {
 		display: flex;
 		align-items: center;
-		margin-left: 0;
-		margin-top: 42px;
-		margin-bottom: 31px;
+		padding-left: 5px;
 	}
 
 	.testdrive__order {
@@ -716,7 +663,7 @@ header {
 	}
 
 	.testdrive__name {
-		margin-right: 25px;
+		margin-right: 26px;
 		color: #E51937;
 		position: relative;
 		padding-left: 29px;
@@ -729,7 +676,6 @@ header {
 		width: 22px;
 		height: 22px;
 		left: 0;
-		top: -3px;
 		background: url("../images/wheel-red.png");
 		background-size: 100% 100%;
 	}
@@ -737,6 +683,8 @@ header {
 	.preview__arrow {
 		margin-bottom: 0;
 	}
+
+	/* info section */
 
 	.info {
 		flex-direction: column;
@@ -751,16 +699,15 @@ header {
     background-position: center top;
     background-size: cover;
     background-size: 100% auto;
-    min-height: 350px;
+    min-height: 323px;
 	}
 
 	.info__advantages {
 		width: auto;
-    padding: 18px 25px 0px 25px;
-    margin-top: -27px;
+    padding: 18px 25px 10px 25px;
 	}
 
-	.info__advantages-wrap {
+	.info__advantages__wrap-odds {
 		display: none;
 	}
 
@@ -772,6 +719,8 @@ header {
 	.links{
 		display: none;
 	}
+
+	/* safe section */
 
 	.safe {
 		flex-direction: column-reverse;
@@ -787,32 +736,27 @@ header {
 		width: auto;
 	}
 
-	.safe__scoring-wrapper-stars {
+	.safe__scoring__text-wrapper{
+		padding-left: 9px;
+	}
+
+	.safe__scoring__rate-wrapper {
 		display: none;
 	}
 
 	.safe__image-wrapper{
-		min-height: 300px;
+		min-height: 294px;
 	}
 
 	.safe-image {
-		left: 49%;
-    top: 55%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%
+		left: 0%;
+    top: 18%;
+    width: 99%
 	}
 
 	.safe__image-wrapper {
 		background-position: 100% 19%;
 		background-size: 99% auto;
-	}
-
-	.safe__scoring{
-		margin-top: -5px;
-	}
-
-	.safe__scoring-wrapper {
-		margin-left: 5px;
 	}
 
 	.footer-wrap {
@@ -830,6 +774,10 @@ header {
 		display: none;
 	}
 
+	.site-nav{
+		width: 35px;
+	}
+
 	.site-nav__item:nth-child(1) {
 		display: none;
 	}
@@ -844,32 +792,34 @@ header {
 		background: url("../images/side_menu_ipad.svg");
 	}
 
+	/* preview section */
+
 	.preview{
-		background-position: center 17%;
+		background-position: center 14%;
 		background-size: 108% auto;
 	}
 
-	.preview__subtitle {
-		margin-bottom: 87px;
-		margin-top: -10px;
+	.preview__title {
+		margin-bottom: 96px;
+	}
+
+	.preview__general-view {
+	  width: 91%;
+	  margin-bottom: 40px;
 	}
 
 	.preview__about {
 		flex-direction: column;
-		margin: 40px 0 60px 0;
+		margin-bottom: 60px;
+	}
+
+	.feature-wraper {
+		margin-right: 0;
+		margin-bottom: 58px;
 	}
 
 	.feature:nth-child(1) {
-		margin-left: 10px;
-		margin-right: 82px;
-	}
-
-	.feature:nth-child(2) {
-		margin-right: 25px;
-	}
-
-	.preview__general-view {
-	  	width: 91%;
+		margin-right: 94px;
 	}
 
 	.feature__image_speepometer {
@@ -877,31 +827,9 @@ header {
 		height: 49px;
 	}
 
-	.feature__parameters-sd {
-		margin-left: 16px;
-		margin-top: -6px;
-	}
-
-	.feature__parameters-rd {
-		margin-left: 5px;
-		margin-top: -4px;
-	}
-
 	.feature__image_road {
-		margin-top: 11px	;
-		margin-right: 5px;
-		margin-left: 2px;
 		width: 44px;
 		height: 72px;
-	}
-
-	.speed {
-		margin-left: 4px;
-	}
-
-	.road {
-		margin-top: -6px;
-		margin-left: 5px;
 	}
 
 	.speed__value, 
@@ -919,15 +847,10 @@ header {
 	.explanation_speed,
 	.explanation_road {
 		justify-content: flex-start;
-		margin-top: -4px;
-		margin-left: 5px;
 	}
 
 	.testdrive {
-		margin-left: 0;
-		margin-top: 54px;
-		display: flex;
-		justify-content: space-around;
+		padding-left: 40px;
 	}
 
 	.testdrive__wheel {
@@ -935,13 +858,10 @@ header {
 	}
 
 	.testdrive__name {
-    	position: relative;
-    	padding-left: 29px;
-    	font-size: 16px;
-    	color: #E51937;
-    	margin-left: 48px;
-    	margin-right: 42px;
-    	margin-top: 5px;
+  	position: relative;
+  	padding-left: 29px;
+  	font-size: 16px;
+  	color: #E51937;
 	}
 
 	.testdrive__order {
@@ -949,31 +869,30 @@ header {
 		width: 221px;
 		height: 55px;
 		background: #E51937;
-		margin-right: 30px;
 	}
 
 	.testdrive__order-text {
 		font-weight: bold;
 		font-size: 16px;
-		margin-left: 2px;
 		color: #FFFFFF;
 	}
 
 	.testdrive__name:before {
-    	position: absolute;
-    	content: "";
-    	display: block;
-    	width: 31px;
-    	height: 31px;
-    	left: -17px;
-    	top: -7px;
+  	position: absolute;
+  	content: "";
+  	width: 31px;
+  	height: 31px;
+  	right: 128px;
+  	bottom: 0;
 		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
 	}
 
 	.preview__arrow {
-		margin-bottom: 70px;
+		margin-bottom: 69px;
 	}
+
+	/* info section */
 
 	.info {
 		flex-direction: column;
@@ -982,7 +901,6 @@ header {
 
 	.info__title {
 		width: auto;
-    margin: 0;
     padding: 0;
     padding-right: 46px;
     color: #E51937;
@@ -990,29 +908,34 @@ header {
     background-image: url(../images/2013-tesla-model-s-cockpit-table.png);
     background-position: center center;
     background-size: cover;
-    min-height: 505px;
+    min-height: 493px;
 	}
 
 	.info__advantages {
 		flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: auto;
-    padding: 56px 34px 68px 34px;
-    margin-top: -10px;
+    padding: 50px 34px 52px 34px;
+	}
+
+	.info__advantages__wrap-text {
+		width: 320px;
+		margin-right: 100px;
+		padding-top: 4px;
 	}
 
 	.advantages-title {
 		margin-bottom: 20px;
 	}
 
-	.info__advantages-wrap-text {
-		width: 45%;
+	.topic-about-advantages{
     margin-right: 0;
+    margin-bottom: 0;
 	}
 
-	.topic-about-advantages {
-		width: auto;
+	.info__advantages__wrap-odds {
+		padding-top: 0px;
+		margin-bottom: 72px;
 	}
 
 	.info__advantages-wrap{
@@ -1021,53 +944,66 @@ header {
     margin-left: 0;
 	}
 
-	.car-odds {
+	.odds {
 		width: auto;
     max-width: 200px;
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 0;
 	}
 
-	.display {
-		margin-bottom: 30px;
+	.odds:nth-child(1) {
+		margin-bottom: 14px;
 	}
 
-	.update {
-		margin-bottom: 20px;
+	.odds:nth-child(2) {
+		margin-bottom: 14px;
 	}
 
-	.capacity {
-		margin-bottom: 0;
+	.odds__text-wrap-measure{
+		width: 172px;
+	}
+
+	.wifi_image {
+		padding-top: 0;
 	}
 
 	.links {
-		margin: 0 auto;
-		margin-top: 25px;
 		width: 459px;
 		height: 55px;
+		padding-left: 160px;
 	}
 
-	.links__info:before {
-	  left: 0px;
-    top: -6px;
+	.links-wrap {
+		position: relative;
+		margin-right: 46px;
+	}
+
+	.links-wrap__image {
+		display:none;
+	}
+
+	.links-wrap__info:before {
+		position :absolute;
+		content: "";
+		display: block;
+		right: 160px;
+		top: 10px;
     width: 32px;
     height: 32px;
     background: url(../images/i-round-table.svg);
     background-size: 100% 100%;
 	}
 
-	.links__info {
-		margin-right: 10px;
-    padding-left: 43px;
+	.links-wrap__info {
     font-size: 16px;
 	}
 
 	.links__order {
-		width: 200px;
+		width: 220px;
 		height: 55px;
     font-size: 16px;
+    padding: 0;
 	}
+
+	/* safe section */
 
 	.safe {
 		flex-direction: column-reverse;
@@ -1076,30 +1012,27 @@ header {
 
 	.safe__scoring {
 		flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: auto;
-    padding: 58px 34px 52px 34px;
+    padding: 61px 34px 52px 34px;
+	}
+
+	.safe__scoring__text-wrapper {
+		width: 320px;
+		margin-bottom: 0;
+		margin-right: 66px;
 	}
 
 	.topic-about-safe {
 		width: auto;
 	}
 
-	.safe__scoring-wrapper {
-		width: 46%;
+	.safe__scoring__rate-wrapper {
+		margin-bottom: 66px;
 	}
 
-	.topic-about-safe {
-	  width: auto;
-	}
-
-	.safe__scoring-wrapper-stars {
-		width: auto;
-    max-width: 45%;
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 55px;
+	.rate-wrapper:nth-child(6) {
+     margin-bottom: 0; 
 	}
 
 	.general-rating-safe {
@@ -1113,9 +1046,7 @@ header {
 	}
 
 	.safe-image {
-		left: 47%;
-    top: 53%;
-    transform: translateX(-50%) translateY(-50%);
+    top: 15%;
     width: 98%;
 	}
 
@@ -1126,31 +1057,10 @@ header {
 
 @media (min-width: 481px) and (max-width: 600px) { 
 	.feature:nth-child(1) {
-	    margin-right: 0;
+	    margin-right: 50px;
 	}
 
 	.info__advantages-wrap-text {
 		margin-bottom: 100px;
-	}
-}
-
-@media (min-width: 1025px) and (max-width: 1161px) { 
-
-	.models-nav__item {
-	  margin-right: 10px;
-	}
-
-	.footer-wrap {
-		display: none;
-	}
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-	.testdrive {
-		width: 300px;
-	}
-
-	.testdrive__name {
-		width: 100px;
 	}
 }
