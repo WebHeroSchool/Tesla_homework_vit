@@ -11,8 +11,6 @@
 	margin: 0 auto;
 }
 
-/* site header */
-
 header {
   display: flex;
   align-items: center;
@@ -105,8 +103,6 @@ header {
 	background: url("../images/side_menu.svg");
 	background-size: 100% 100%;
 }
-
-/* preview section */
 
 .preview {
 	display: flex;
@@ -270,7 +266,6 @@ header {
 	margin-bottom: 34px;
 }
 
-/* info section */
 .info{
 	display: flex;
 }
@@ -433,8 +428,6 @@ header {
 	border-color: black;
 }
 
-/* safe section */
-
 .safe {
   display: flex;
 }
@@ -564,8 +557,6 @@ header {
   right: 46px;
 }
 
-/* footer */
-
 .footer-wrap {
   position: absolute;
   bottom: 10px;
@@ -579,8 +570,6 @@ header {
   font-weight: bold;
   font-size: 9px;
 }
-
-/* Медиазапросы */
 
 @media (max-width: 480px) {
     
@@ -614,8 +603,6 @@ header {
 		width: 138px;
 		height: 42px;
 	}
-
-	/* preview section */
 
 	.preview{
 		background-position: 55% 23%;
@@ -730,8 +717,6 @@ header {
 		margin-bottom: 0;
 	}
 
-	/* info section */
-
 	.info {
 		flex-direction: column;
     min-height: auto;
@@ -765,8 +750,6 @@ header {
 	.links{
 		display: none;
 	}
-
-	/* safe section */
 
 	.safe {
 		flex-direction: column-reverse;
@@ -837,8 +820,6 @@ header {
 		height: 22px;
 		background: url("../images/side_menu_ipad.svg");
 	}
-
-	/* preview section */
 
 	.preview{
 		background-position: center 14%;
@@ -937,8 +918,6 @@ header {
 	.preview__arrow {
 		margin-bottom: 69px;
 	}
-
-	/* info section */
 
 	.info {
 		flex-direction: column;
@@ -1054,8 +1033,6 @@ header {
     font-size: 16px;
     padding: 0;
 	}
-
-	/* safe section */
 
 	.safe {
 		flex-direction: column-reverse;
