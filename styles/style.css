@@ -669,10 +669,6 @@ header {
     font-size: 10px;
 	}
 
-	.feature__parameters-rd {
-		margin-left: 5px;
-	}
-
 	.testdrive {
 		display: flex;
 		align-items: center;
@@ -687,7 +683,6 @@ header {
 	.testdrive__order-text {
 		font-weight: bold;
 		font-size: 13px;
-		margin-left: 2px;
 		color: #FFFFFF;
 	}
 
