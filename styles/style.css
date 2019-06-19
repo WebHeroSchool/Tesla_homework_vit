@@ -223,6 +223,27 @@ header {
 	color: #000000;
   text-decoration: none;
   margin-right: 40px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.testdrive__name:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	left: 0;
+	background: url("../images/steering-wheel.png");
+	background-size: 100% 100%;
+}
+
+.testdrive__name:hover {
+	color: #E51937;
+}
+
+.testdrive__name:hover:before {
+	background: url("../images/wheel-red.png");
 }
 
 .testdrive__order {
@@ -237,6 +258,7 @@ header {
 .testdrive__order:hover{
 	background: #E51937;
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
 .testdrive__order-text {
@@ -374,6 +396,24 @@ header {
   font-weight: bold;
   font-size: 13px;
   align-self: center;
+  padding-left: 30px;
+  position: relative;
+}
+
+.links-wrap__info:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	left: 0;
+	bottom: 0;
+	background: url("../images/i-round.svg");
+	background-size: 100% 100%;
+}
+
+.links-wrap__info:hover {
+	color: black;
 }
 
 .links__order {
@@ -385,6 +425,12 @@ header {
   color: #ffffff;
   background-color: #E51937;
   border-color: #ffffff;
+}
+
+.links__order:hover {
+	cursor: pointer;
+	color: black;
+	border-color: black;
 }
 
 /* safe section */
@@ -434,7 +480,7 @@ header {
 
 .rate-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 8px;
 }
 
@@ -859,7 +905,7 @@ header {
 
 	.testdrive__name {
   	position: relative;
-  	padding-left: 29px;
+  	padding-left: 35px;
   	font-size: 16px;
   	color: #E51937;
 	}
@@ -912,10 +958,16 @@ header {
 	}
 
 	.info__advantages {
-		flex-direction: row;
+		flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     width: auto;
     padding: 50px 34px 52px 34px;
+	}
+
+	.info__advantages-wrapper {
+		display: flex;
+		flex-direction: row;
 	}
 
 	.info__advantages__wrap-text {
@@ -969,7 +1021,7 @@ header {
 	.links {
 		width: auto;
 		height: 55px;
-		padding-left: 160px;
+		align-self: center;
 	}
 
 	.links-wrap {
@@ -985,8 +1037,6 @@ header {
 		position :absolute;
 		content: "";
 		display: block;
-		right: 160px;
-		top: 10px;
     width: 32px;
     height: 32px;
     background: url(../images/i-round-table.svg);
@@ -995,6 +1045,7 @@ header {
 
 	.links-wrap__info {
     font-size: 16px;
+    padding-left: 40px;
 	}
 
 	.links__order {
@@ -1012,10 +1063,16 @@ header {
 	}
 
 	.safe__scoring {
-		flex-direction: row;
+		flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     width: auto;
     padding: 61px 34px 52px 34px;
+	}
+
+	.safe__scoring-wrapper {
+		display: flex;
+		flex-direction: row;
 	}
 
 	.safe__scoring__text-wrapper {
@@ -1067,13 +1124,11 @@ header {
 	}
 
 	.links-wrap {
-		margin-right: 10px;
+		margin-right: 5px;
 	}
-}
 
-@media (min-width: 481px) and (max-width: 650px) { 
-	.links {
-		padding-left: 30px;
+	.links-wrap__info {
+		padding-left: 35px;
 	}
 }
 
@@ -1084,5 +1139,17 @@ header {
 
 	.safe-rate__text {
 		margin-right: 0;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 630px) {
+	.safe-rate {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 360px) {
+	.info__title {
+		background-size: cover;
 	}
 }
