@@ -4,18 +4,12 @@
 	font-weight: normal;
 }
 
-body {
-	margin: 0;
-}
-
 .wrap {
   position: relative;
 	min-width: 320px;
 	max-width: 1440px;
 	margin: 0 auto;
 }
-
-/* site header */
 
 header {
   display: flex;
@@ -27,15 +21,14 @@ header {
 .models-nav {
 	display: flex;
 	justify-content: space-between;
-	margin-left: 110px;
+	width: 489px;
 }
 
 .models-nav__item {
   font-weight: 600;
   font-size: 15px;
-  color: #000000	;
+  color: #000000;
   text-decoration: none; 
-  margin-right: 45px;
 }
 
 .models-nav__item:after {
@@ -73,26 +66,24 @@ header {
 .site-nav {
 	display: flex;
 	justify-content: space-between;
-    font-family: Montserrat;
-    align-items: center;
+	width: 203px;
 }
 
 .site-nav__item {
-    font-weight: 600;
-    font-size: 15px;
-    color: #000000	;
-    text-decoration: none; 
-    margin-left: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000	;
+  text-decoration: none; 
 }
 
 .site-nav__item:after {
 	content: "";
-    background: url(../images/active-line.svg) bottom no-repeat;
-    display: block;
-    width: 0%;
-    height: 2px;
-    position: relative;
-    top: 6px;
+  background: url(../images/active-line.svg) bottom no-repeat;
+  display: block;
+  width: 0%;
+  height: 2px;
+  position: relative;
+  top: 6px;
 }
 
 .site-nav__item:not(:nth-child(3)):hover{
@@ -113,8 +104,6 @@ header {
 	background-size: 100% 100%;
 }
 
-/* site section 1 */
-
 .preview {
 	display: flex;
 	flex-direction: column;
@@ -123,38 +112,36 @@ header {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;
-}
-
-.preview__general-view {
-  width: 100%;
-  max-width: 968px;
+	position: relative;
 }
 
 .preview__title {
 	font-weight: 600;
-  	font-size: 90px;
-  	align-items: center;
+  font-size: 90px;
+  margin-bottom: 35px;
 }
 
 .preview__subtitle {
   font-weight: 500;
   font-size: 15px;
-  align-items: center;
-  margin-top: -10px;
-  margin-bottom: 27px;
+  position: absolute;
+  top: 100px;
+}
+
+.preview__general-view {
+	margin-bottom: 26px;
 }
 
 .preview__about {
 	display: flex;
-	align-items: center;
 	flex-direction: row;
-	margin:28px 321px 34px 321px;
+	margin-bottom: 34px;
 }
 
 .feature-wraper {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  margin-right: 105px;
 }
 
 .feature {
@@ -162,16 +149,27 @@ header {
 	align-items: center;
 }
 
+.feature:nth-child(1){
+	margin-right: 81px;
+}
+
+.feature__image_speepometer {
+	margin-right: 14px;
+}
+
+.feature__image_road {
+	margin-right: 11px;
+	padding-top: 8px;
+}
+
 .feature__parameters-sd {
 	display: flex;
 	flex-direction: column;
-	margin-left: 14px;
 }
 
 .feature__parameters-rd {
 	display: flex;
 	flex-direction: column;
-	margin-left: 11px;
 }
 
 .speed {
@@ -182,41 +180,32 @@ header {
 .road {
 	display: flex;
 	flex-direction: row;
-	margin-top: -3px;
 }
 
 .speed__value, 
 .road__value {
 	font-weight: 600;
 	font-size: 35px;
+	margin-right: 7px;
 }
 
 .speed__unit,
 .road__unit {
 	font-weight: 600;
 	font-size: 20px;
-	padding-left: 7px;
 	align-self: flex-end;
-	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .explanation_speed,
 .explanation_road {
 	font-weight: normal;
 	font-size: 12px;
-	margin-top: -2px;
-}
-
-.feature__image_road {
-	margin-top: 8px;
-	margin-left: 81px;
 }
 
 .testdrive {
 	display: flex;
 	align-items: center;
-	margin-left: 105px;
-	margin-top: 3px;
 }
 
 .testdrive__wheel {
@@ -230,15 +219,33 @@ header {
 	color: #000000;
   text-decoration: none;
   margin-right: 40px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.testdrive__name:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	left: 0;
+	background: url("../images/steering-wheel.png");
+	background-size: 100% 100%;
+}
+
+.testdrive__name:hover {
+	color: #E51937;
+}
+
+.testdrive__name:hover:before {
+	background: url("../images/wheel-red.png");
 }
 
 .testdrive__order {
 	color: #E51937;
 	width: 160px;
 	height: 40px;
-	text-transform: uppercase;
-	box-sizing: border-box;
-	text-align: center;
   padding: 0;
 	border: 2px solid;
 	background: #FFFFFF;
@@ -247,17 +254,322 @@ header {
 .testdrive__order:hover{
 	background: #E51937;
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
 .testdrive__order-text {
 	font-weight: bold;
 	font-size: 13px;
-	margin-left: 2px;
 }
 
-/* site section 2 */
+.preview__arrow {
+	margin-bottom: 34px;
+}
 
-/* Медиазапросы */
+.info{
+	display: flex;
+}
+
+.info__title {
+	width: 100%;
+	padding-top: 63px;
+	padding-left: 80px;
+	background-image: url("../images/2013-tesla-model-s-cockpit.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-size: 70px;
+	font-weight: 600;
+	color: #E51937;
+}
+
+.info__advantages {
+	display: flex;
+	flex-direction: column;
+	padding: 51px 41px 63px 52px;
+	color: #ffffff;
+	background-color: #E51937;
+}
+
+.advantages-title {
+	font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 11px;
+}
+
+.topic-about-advantages {
+	font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 56px;
+  width: 316px;
+  line-height: 18px;
+}
+
+.info__advantages__wrap-odds {
+	margin-bottom: 170px;
+}
+
+.odds {
+	display: flex;
+	align-items: center;
+}
+
+.odds:nth-child(1){
+	margin-bottom: 28px;
+}
+
+.odds:nth-child(2){
+	margin-bottom: 17px;
+}
+
+.odds__image {
+	margin-right: 19px;
+	padding-top: 18px;
+}
+
+.wifi_image {
+	margin-right: 17px;
+	padding-top: 6px;
+}
+
+.cap_image {
+	margin-right: 25px;
+}
+
+.odds__text-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.odds__text-wrap-cap {
+	padding-top: 9px;
+}
+
+.odds__text-wrap-measure {
+	display: flex;
+	flex-direction: row;
+}
+
+.text-wrap__count {
+	margin-right: 10px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.text-wrap__value {
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+  padding-top: 10px;
+  line-height: 18px;
+}
+
+.text-wrap__explanation {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.links {
+	width: 347px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.links-wrap {
+	display: flex;
+	flex-direction: row;
+	margin-right: 26px;
+}
+
+.links-wrap__image {
+	margin-right: 6px;
+}
+
+.links-wrap__info {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  align-self: center;
+  padding-left: 30px;
+  position: relative;
+}
+
+.links-wrap__info:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	left: 0;
+	bottom: 0;
+	background: url("../images/i-round.svg");
+	background-size: 100% 100%;
+}
+
+.links-wrap__info:hover {
+	color: black;
+}
+
+.links__order {
+	width: 160px;
+	height: 40px;
+  border: 2px solid;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #E51937;
+  border-color: #ffffff;
+}
+
+.links__order:hover {
+	cursor: pointer;
+	color: black;
+	border-color: black;
+}
+
+.safe {
+  display: flex;
+}
+
+.safe__scoring {
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  padding: 51px 40px 60px 56px;
+  color: #ffffff;
+  background-color: #E51937;
+}
+
+.safe__scoring__text-wrapper{
+	margin-bottom: 56px;
+}
+
+.scoring-title {
+	margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.topic-about-safe {
+	width: 316px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.safe__scoring__rate-wrapper {
+	margin-bottom: 59px;
+}
+
+
+.rating-title {
+	margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.rate-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.rate-wrapper:nth-child(6) {
+	margin-bottom: 98px;
+}
+
+.safe-rate {
+	display: flex;
+  flex-direction: row;
+}
+
+.safe-rate__text {
+	font-weight: bold;
+  width: 122px;
+  font-size: 17px;
+  margin-right: 31px;
+  padding-top: 4px;
+}
+
+.safe-rate__text-small{
+	font-weight: bold;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.safe-rate__wrapper {
+	display: inline-block;
+  width: 160px;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+}
+
+.general-rating-safe {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.general-rating-safe__image{
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-right: 23px;
+}
+
+.general-rating-safe__text{
+	position: relative;
+}
+
+.general-rating-safe__value {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.general-rating-safe__safety {
+	font-weight: 600;
+	font-size: 25px;
+	position: absolute;
+	bottom: 3px;
+}
+
+.safe__image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.safe__image-wrapper {
+	background-image: url("../images/model-s.png");
+	background-repeat: no-repeat;
+	background-position: 100% 19%;
+	background-size: 80% auto;
+}
+
+.safe-image {
+  width: 105%;
+  position: absolute;
+  top: 170px;
+  right: 46px;
+}
+
+.footer-wrap {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  font-family: 'Montserrat';
+}
+
+.developed {
+  margin-bottom: 3px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 9px;
+}
 
 @media (max-width: 480px) {
     
@@ -267,6 +579,10 @@ header {
 
 	.models-nav {
 		display: none;
+	}
+
+	.site-nav {
+		width: 24px;
 	}
 
 	.site-nav__item:nth-child(1) {
@@ -295,25 +611,30 @@ header {
 
 	.preview__title {
 		font-size: 50px;
+		margin-bottom: 56px;
 	}
 
 	.preview__subtitle {
 		font-size: 10px;
-		margin-bottom: 49px;
-		margin-top: -4px;
+		top: 58px;
 	}
 
 	.preview__general-view {
-	  	width: 95%;
+		width: 95%;
 	}
 
 	.preview__about {
 		flex-direction: column;
-		margin: 27px 0 0 0;
+		margin-bottom: 30px;
+	}
+
+	.feature-wraper {
+		margin-right: 0;
+		margin-bottom: 42px;
+		padding-left: 10px;
 	}
 
 	.feature:nth-child(1) {
-		margin-left: 10px;
 		margin-right: 43px;
 	}
 
@@ -327,15 +648,9 @@ header {
 	}
 
 	.feature__image_road {
-		margin-top: 1px	;
 		margin-right: 7px;
-		margin-left: 0;
 		width: 25px;
 		height: 41px;
-	}
-
-	.road {
-		margin-top: 0;
 	}
 
 	.speed__value, 
@@ -346,26 +661,18 @@ header {
 	.speed__unit,
 	.road__unit {
 		font-size: 15px;
-		margin-top: 11px;
 	}
 
 	.explanation_speed,
 	.explanation_road {
-	    font-weight: normal;
-	    font-size: 10px;
-	    margin-top: -2px;
-	}
-
-	.feature__parameters-rd {
-		margin-left: 5px;
+    font-weight: normal;
+    font-size: 10px;
 	}
 
 	.testdrive {
 		display: flex;
 		align-items: center;
-		margin-left: 0;
-		margin-top: 42px;
-		margin-bottom: 31px;
+		padding-left: 5px;
 	}
 
 	.testdrive__order {
@@ -376,7 +683,6 @@ header {
 	.testdrive__order-text {
 		font-weight: bold;
 		font-size: 13px;
-		margin-left: 2px;
 		color: #FFFFFF;
 	}
 
@@ -385,7 +691,7 @@ header {
 	}
 
 	.testdrive__name {
-		margin-right: 25px;
+		margin-right: 26px;
 		color: #E51937;
 		position: relative;
 		padding-left: 29px;
@@ -398,9 +704,87 @@ header {
 		width: 22px;
 		height: 22px;
 		left: 0;
-		top: -3px;
 		background: url("../images/wheel-red.png");
 		background-size: 100% 100%;
+	}
+
+	.preview__arrow {
+		margin-bottom: 0;
+	}
+
+	.info {
+		flex-direction: column;
+    min-height: auto;
+	}
+
+	.info__title{
+		margin: 0;
+    padding: 0;
+    color: transparent;
+    background-image: url(../images/2013-tesla-model-s-cockpit-mobile.png);
+    background-position: center top;
+    background-size: cover;
+    background-size: 100% auto;
+    min-height: 323px;
+	}
+
+	.info__advantages {
+		width: auto;
+    padding: 18px 25px 10px 25px;
+	}
+
+	.info__advantages__wrap-odds {
+		display: none;
+	}
+
+	.topic-about-advantages {
+		margin-bottom: 30px;
+		width: auto;
+	}
+
+	.links{
+		display: none;
+	}
+
+	.safe {
+		flex-direction: column-reverse;
+    min-height: auto;
+	}
+
+	.safe__scoring {
+		width: auto;
+    padding: 18px 25px 0px 25px;
+	}
+
+	.topic-about-safe {
+		width: auto;
+	}
+
+	.safe__scoring__text-wrapper{
+		padding-left: 9px;
+	}
+
+	.safe__scoring__rate-wrapper {
+		display: none;
+	}
+
+	.safe__image-wrapper{
+		min-height: 294px;
+	}
+
+	.safe-image {
+		left: 0%;
+    top: 18%;
+    width: 99%
+	}
+
+	.safe__image-wrapper {
+		background-position: 100% 19%;
+		background-size: 99% auto;
+	}
+
+	.footer-wrap {
+		display: none;
 	}
 }
 
@@ -412,6 +796,10 @@ header {
 
 	.models-nav {
 		display: none;
+	}
+
+	.site-nav{
+		width: 35px;
 	}
 
 	.site-nav__item:nth-child(1) {
@@ -429,31 +817,31 @@ header {
 	}
 
 	.preview{
-		background-position: center 17%;
+		background-position: center 14%;
 		background-size: 108% auto;
 	}
 
-	.preview__subtitle {
-		margin-bottom: 87px;
-		margin-top: -10px;
+	.preview__title {
+		margin-bottom: 96px;
+	}
+
+	.preview__general-view {
+	  width: 91%;
+	  margin-bottom: 40px;
 	}
 
 	.preview__about {
 		flex-direction: column;
-		margin: 40px 0 60px 0;
+		margin-bottom: 60px;
+	}
+
+	.feature-wraper {
+		margin-right: 0;
+		margin-bottom: 58px;
 	}
 
 	.feature:nth-child(1) {
-		margin-left: 10px;
-		margin-right: 82px;
-	}
-
-	.feature:nth-child(2) {
-		margin-right: 25px;
-	}
-
-	.preview__general-view {
-	  	width: 91%;
+		margin-right: 94px;
 	}
 
 	.feature__image_speepometer {
@@ -461,31 +849,9 @@ header {
 		height: 49px;
 	}
 
-	.feature__parameters-sd {
-		margin-left: 16px;
-		margin-top: -6px;
-	}
-
-	.feature__parameters-rd {
-		margin-left: 5px;
-		margin-top: -4px;
-	}
-
 	.feature__image_road {
-		margin-top: 11px	;
-		margin-right: 5px;
-		margin-left: 2px;
 		width: 44px;
 		height: 72px;
-	}
-
-	.speed {
-		margin-left: 4px;
-	}
-
-	.road {
-		margin-top: -6px;
-		margin-left: 5px;
 	}
 
 	.speed__value, 
@@ -498,21 +864,15 @@ header {
 	.road__unit {
 		font-size: 20px;
 		margin-bottom: 12px;
-	/*margin-left: 	3px;*/
 	}
 
 	.explanation_speed,
 	.explanation_road {
 		justify-content: flex-start;
-		margin-top: -4px;
-		margin-left: 5px;
 	}
 
 	.testdrive {
-		margin-left: 0;
-		margin-top: 54px;
-		display: flex;
-		justify-content: space-around;
+		padding-left: 40px;
 	}
 
 	.testdrive__wheel {
@@ -520,13 +880,10 @@ header {
 	}
 
 	.testdrive__name {
-    	position: relative;
-    	padding-left: 29px;
-    	font-size: 16px;
-    	color: #E51937;
-    	margin-left: 48px;
-    	margin-right: 42px;
-    	margin-top: 5px;
+  	position: relative;
+  	padding-left: 35px;
+  	font-size: 16px;
+  	color: #E51937;
 	}
 
 	.testdrive__order {
@@ -534,32 +891,237 @@ header {
 		width: 221px;
 		height: 55px;
 		background: #E51937;
-		margin-right: 30px;
 	}
 
 	.testdrive__order-text {
 		font-weight: bold;
 		font-size: 16px;
-		margin-left: 2px;
 		color: #FFFFFF;
 	}
 
 	.testdrive__name:before {
-    	position: absolute;
-    	content: "";
-    	display: block;
-    	width: 31px;
-    	height: 31px;
-    	left: -17px;
-    	top: -7px;
+  	position: absolute;
+  	content: "";
+  	width: 31px;
+  	height: 31px;
+  	right: 128px;
+  	bottom: 0;
 		background: url("../images/wheel-red-big.png");
 		background-size: 100% 100%;
 	}
+
+	.preview__arrow {
+		margin-bottom: 69px;
+	}
+
+	.info {
+		flex-direction: column;
+    min-height: auto;
+	}
+
+	.info__title {
+		width: auto;
+    padding: 0;
+    padding-right: 46px;
+    color: #E51937;
+    text-align: right;
+    background-image: url(../images/2013-tesla-model-s-cockpit-table.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 493px;
+	}
+
+	.info__advantages {
+		flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    padding: 50px 34px 52px 34px;
+	}
+
+	.info__advantages-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.info__advantages__wrap-text {
+		width: 45%;
+		margin-right: 100px;
+		padding-top: 4px;
+	}
+
+	.advantages-title {
+		margin-bottom: 20px;
+		width: auto;
+	}
+
+	.topic-about-advantages{
+    margin-right: 0;
+    margin-bottom: 0;
+    width: auto;
+	}
+
+	.info__advantages__wrap-odds {
+		padding-top: 0px;
+		margin-bottom: 72px;
+		width: 30%;
+	}
+
+	.odds {
+		width: auto;
+    max-width: 200px;
+	}
+
+	.odds__text-wrap {
+		width: auto;
+	}
+
+	.odds:nth-child(1) {
+		margin-bottom: 14px;
+	}
+
+	.odds:nth-child(2) {
+		margin-bottom: 14px;
+	}
+
+	.odds__text-wrap-measure{
+		width: auto;
+	}
+
+	.wifi_image {
+		padding-top: 0;
+	}
+
+	.links {
+		width: auto;
+		height: 55px;
+		align-self: center;
+	}
+
+	.links-wrap {
+		position: relative;
+		margin-right: 46px;
+	}
+
+	.links-wrap__image {
+		display:none;
+	}
+
+	.links-wrap__info:before {
+		position :absolute;
+		content: "";
+		display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/i-round-table.svg);
+    background-size: 100% 100%;
+	}
+
+	.links-wrap__info {
+    font-size: 16px;
+    padding-left: 40px;
+	}
+
+	.links__order {
+		width: 220px;
+		height: 55px;
+    font-size: 16px;
+    padding: 0;
+	}
+
+	.safe {
+		flex-direction: column-reverse;
+    min-height: auto;
+	}
+
+	.safe__scoring {
+		flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    padding: 61px 34px 52px 34px;
+	}
+
+	.safe__scoring-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.safe__scoring__text-wrapper {
+		width: 45%;
+		margin-bottom: 0;
+		margin-right: 66px;
+	}
+
+	.scoring-title {
+		width: auto;
+	}
+
+	.topic-about-safe {
+		width: auto;
+	}
+
+	.safe__scoring__rate-wrapper {
+		margin-bottom: 66px;
+		width: 45%;
+	}
+
+	.rate-wrapper:nth-child(6) {
+    margin-bottom: 0; 
+	}
+
+	.general-rating-safe {
+		display: none;
+	}
+
+	.safe__image-wrapper {
+		min-height: 540px;
+		background-position: center 15%;
+		background-size: 75% auto;
+	}
+
+	.safe-image {
+    top: 15%;
+    width: 98%;
+	}
+
+	.footer-wrap {
+		display: none;
+	}
 }
 
-@media (min-width: 1025px) and (max-width: 1161px) { 
+@media (min-width: 481px) and (max-width: 600px) { 
+	.info__advantages__wrap-text {
+		margin-right: 20px;
+	}
 
-	.models-nav__item {
-	  margin-right: 10px;
+	.links-wrap {
+		margin-right: 5px;
+	}
+
+	.links-wrap__info {
+		padding-left: 35px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 730px) { 
+	.safe__scoring__text-wrapper {
+		margin-right: 20px;
+	}
+
+	.safe-rate__text {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 630px) {
+	.safe-rate {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 360px) {
+	.info__title {
+		background-size: cover;
 	}
 }
